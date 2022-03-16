@@ -1,0 +1,39 @@
+.homePage {
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+.egurLogo {
+  background-image: url("../assets/logo_final.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 20vh;
+  margin: 2vh 0 0 2vw;
+}
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  color: #fff;
+  margin: 0 3rem 0 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+a {
+  font-family: "Nunito-Bold", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+.navHomePage {
+  margin-left: 20vw;
+}
