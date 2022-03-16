@@ -1,24 +1,11 @@
-*{
-    margin: 0;
-}
-
-:root {
-    --footerColor : #c4c4C4;
-    --secondColor : #fff;
-    --fontFamily : "nunito", "abril";
-}
-
-/* FOOTER */
-
 footer{
     display: flex;
     justify-content: space-between;
     height: auto;
     width: 100%;
-    background-color: var(--footerColor);
-    color: var(--secondColor);
-    font-family:var(--fontFamily);
-    border-right: pi;
+    background-color: $footerColor;
+    color: $secondColor;
+    font-family:$fontFamily;
 }
 
 footer p{
@@ -36,7 +23,7 @@ footer p img{
 
 .info {
     width: 50%;
-    border-right: var(--secondColor) 0.1rem solid;
+    border-right: $secondColor 0.1rem solid;
 }
 
 .socialNetwork{
