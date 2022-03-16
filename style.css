@@ -25,14 +25,14 @@ body {
   background-position: 80% 65%;
 }
 
-#homepage {
+.homePage {
   min-height: 100vh;
 }
 header {
   display: flex;
   align-items: center;
 }
-#egur-logo {
+.egurLogo {
   background-image: url("./assets/logo_final.svg");
   width: 282px;
   height: 174px;
@@ -60,11 +60,11 @@ a {
   text-align: center;
 }
 
-#navHomePage {
+.navHomePage {
   margin-left: 20vw;
 }
 
-#baseline {
+.baseline {
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
   font-weight: bold;
@@ -72,7 +72,7 @@ a {
   margin-left: 46px;
 }
 
-#concept-scroll {
+.conceptScroll {
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
   font-weight: bold;
@@ -81,13 +81,7 @@ a {
   margin-top: 350px;
 }
 
-#arrow-down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#arrow-container {
+.arrowContainer {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
