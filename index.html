@@ -4,24 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>EGUR EXTEA</title>
   </head>
   <body>
-    <section id="homePage">
+    <section id="homepage">
       <header>
-        <h1 id="titleHomePage">EGUR ETXEA</h1>
-        <img src="./assets/logo_white.png" alt="Egur Etxea" width="30vw" />
+        <div id="egur-logo"></div>
         <nav id="navHomePage">
-          <ul>
-            <li>LE CONCEPT</li>
-            <li>NOS PROJETS</li>
-            <li>NOTRE HISTOIRE</li>
-            <li>CONTACT</li>
+          <ul id="navHP">
+            <li><a href="#concept"> CONCEPT</a></li>
+            <li><a href="#projets"> NOS PROJETS </a></li>
+            <li><a href="#histoire"> NOTRE HISTOIRE </a></li>
+            <li><a href="#contact"> CONTACT </a></li>
           </ul>
         </nav>
       </header>
-      <h2 id="baseline">Créateur d’expériences de vies mémorables</h2>
-      <div>Découvrir notre concept</div>
+      <h2 id="baseline">
+        Créateur d’expériences <br />
+        de vies mémorables
+      </h2>
+      <div id="concept-scroll">
+        DÉCOUVRIR <br />
+        NOTRE CONCEPT
+      </div>
+      <div id="arrow-container">
+        <a href="#concept">
+          <img src="./assets/arrow-down-circle.svg" alt="Découvrir le concept" width="50vw" />
+        </a>
+      </div>
     </section>
 
     <section id="concept"></section>
