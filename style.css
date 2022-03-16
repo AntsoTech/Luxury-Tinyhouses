@@ -1,3 +1,5 @@
+/* début CSS nos projet */
+
 h1{
     text-align: center;
     font-size: 4rem;
@@ -26,7 +28,7 @@ h2{
 
 .image div{
     width: 50%;
-    height: 40vh;
+    height: 45vh;
 
 }
 .image1 img{
@@ -35,7 +37,7 @@ h2{
     object-fit: cover;
 }
 .image2 img{
-    width: 80%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     position: relative;
@@ -43,3 +45,6 @@ h2{
 
 }
 
+
+
+/* fin CSS nos projet */
