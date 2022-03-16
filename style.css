@@ -3,9 +3,9 @@
 }
 
 :root {
-    --footer-color : #c4c4C4;
-    --second-color : #fff;
-    --font-family : "nunito", "abril";
+    --footerColor : #c4c4C4;
+    --secondColor : #fff;
+    --fontFamily : "nunito", "abril";
 }
 
 /* FOOTER */
@@ -15,9 +15,9 @@ footer{
     justify-content: space-between;
     height: auto;
     width: 100%;
-    background-color: var(--footer-color);
-    color: var(--second-color);
-    font-family:var(--font-family);
+    background-color: var(--footerColor);
+    color: var(--secondColor);
+    font-family:var(--fontFamily);
     border-right: pi;
 }
 
@@ -34,10 +34,9 @@ footer p img{
     padding-right: 5px;
 }
 
-.info{
-    padding-left: 10px;
-    padding-right: 10px;
-    border-right: var(--second-color) 4rem, solid ;
+.info {
+    width: 50%;
+    border-right: var(--secondColor) 0.1rem solid;
 }
 
 .socialNetwork{
