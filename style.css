@@ -19,10 +19,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("./assets/wp_homepage.jpeg");
+  /* background-image: url("./assets/wp_homepage.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 80% 65%;
+  background-position: 80% 65%; */
 }
 
 .homePage {
@@ -59,7 +59,17 @@ a {
   color: #fff;
   text-align: center;
 }
-
+.bgVideo {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .navHomePage {
   margin-left: 20vw;
 }
