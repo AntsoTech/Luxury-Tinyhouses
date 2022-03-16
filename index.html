@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiny-Houses</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>
-        <nav></nav>
-    </div>
-    <header></header>
-    <section id="concept"></section>
-    <section id="projets"></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>EGUR EXTEA</title>
+  </head>
+  <body>
+    <section class="homePage">
+      <header>
+        <div class="egurLogo"></div>
+        <nav class="navHomePage">
+          <ul class="navHP">
+            <li><a href="#concept"> CONCEPT</a></li>
+            <li><a href="#projects"> NOS PROJETS </a></li>
+            <li><a href="#history"> NOTRE HISTOIRE </a></li>
+            <li><a href="#contact"> CONTACT </a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="baseline">
+        Créateur d’expériences <br />
+        de vies mémorables
+      </h2>
+      <div class="conceptScroll">
+        DÉCOUVRIR <br />
+        NOTRE CONCEPT
+      </div>
+      <div class="arrowContainer">
+        <a href="#concept">
+          <img src="./assets/arrow-down-circle.svg" alt="Découvrir le concept" width="50vw" />
+        </a>
+      </div>
+    </section>
+
+    <section class="concept"></section>
+    <section class="projects">
          <h1>NOS PROJETS RÉALISÉS</h1>
             <p>“On commence toujours un projet par la fin, quand on programme un GPS, on lui dit où l’on va, pas où l’on est.” </p>
                 <h2>Alain Leblay</h2>
@@ -36,8 +61,29 @@
                    />
                    </div> 
             </div>
-    <section id="histoire"></section>
-    <section id="contact"></section>
-    <footer></footer>
-</body>
+    </section>
+    <section class="history"></section>
+    <section class="contact"></section>
+    <footer>
+        <div class="info">
+            <p>
+                <img src="assets/Icon/location.png" alt="icone location">
+                27 Rte de Pitoy </br> 64600 Biarritz
+            </p>
+            <p>
+                <img src="assets/Icon/phone.png" alt="icone phone">
+                +33635425690
+            </p>
+            <p class=>
+                <img src="assets/Icon/envelope.png" alt="icone envelope">
+                contact@egur-etxea.com 
+            </p>
+        </div>
+        <div class="socialNetwork">
+            <img src="assets/Icon/twitter.png" alt="twitter">
+            <img src="assets/Icon/facebook.png" alt="facebook">
+            <img src="assets/Icon/youtube.png" alt="youtube">
+        </div>
+    </footer>
+  </body>
 </html>
