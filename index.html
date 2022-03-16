@@ -1,20 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <nav></nav>
-    </div>
-    <header></header>
-    <section id="concept"></section>
-    <section id="projets"></section>
-    <section id="histoire"></section>
-    <section id="contact"></section>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>EGUR EXTEA</title>
+  </head>
+  <body>
+    <section class="homePage">
+      <header>
+        <div class="egurLogo"></div>
+        <nav class="navHomePage">
+          <ul class="navHP">
+            <li><a href="#concept"> CONCEPT</a></li>
+            <li><a href="#projects"> NOS PROJETS </a></li>
+            <li><a href="#history"> NOTRE HISTOIRE </a></li>
+            <li><a href="#contact"> CONTACT </a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="baseline">
+        Créateur d’expériences <br />
+        de vies mémorables
+      </h2>
+      <div class="conceptScroll">
+        DÉCOUVRIR <br />
+        NOTRE CONCEPT
+      </div>
+      <div class="arrowContainer">
+        <a href="#concept">
+          <img src="./assets/arrow-down-circle.svg" alt="Découvrir le concept" width="50vw" />
+        </a>
+      </div>
+    </section>
+
+    <section class="concept"></section>
+    <section class="projects"></section>
+
+    <!-- Début de la section histoire -->
+    <section id="histoire">
+        <h1>NOTRE HISTOIRE</h1>
+        <p class="histoireText">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
+            Nous sommes 4, et avec vous et vos projets, nous sommes des millions. Nous voulons vous aider à créer un endroit spirituel, animé et qui vous ressemble. </p>
+            <div class="teamContainer">
+                <div id="teamPicture">
+                </div>
+                <div class="teamSection">
+                    <h3 class="teamTitle">Notre équipe</h3>    
+                    <div class="teamCard">
+                        <h4>Antso Rakotoson <br>
+                        Ingénieur Structure
+                        </h4>
+                    </div>
+                    <div class="teamCard">
+                        <h4>Astrid Froitier  <br>
+                        Ingénieur Éco-conception</h4>
+                    </div>
+                    <div class="teamCard">
+                        <h4>Quentin Guérandel<br>
+                        Designer & Ébéniste</h4>
+                    </div>
+                    <div class="teamCard">
+                        <h4>Johnny Hiriart<br>
+                        Ingénieur Matériaux Bois</h4>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="contact"></section>
+    <footer>
+        <div class="info">
+            <p>
+                <img src="assets/Icon/location.png" alt="icone location">
+                27 Rte de Pitoy </br> 64600 Biarritz
+            </p>
+            <p>
+                <img src="assets/Icon/phone.png" alt="icone phone">
+                +33635425690
+            </p>
+            <p class=>
+                <img src="assets/Icon/envelope.png" alt="icone envelope">
+                contact@egur-etxea.com 
+            </p>
+        </div>
+        <div class="socialNetwork">
+            <img src="assets/Icon/twitter.png" alt="twitter">
+            <img src="assets/Icon/facebook.png" alt="facebook">
+            <img src="assets/Icon/youtube.png" alt="youtube">
+        </div>
+    </footer>
+  </body>
 </html>
