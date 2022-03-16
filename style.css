@@ -34,10 +34,18 @@ header {
 }
 .egurLogo {
   background-image: url("./assets/logo_final.svg");
-  width: 282px;
-  height: 174px;
-  margin: 38px 0 0 46px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 20vh;
+  margin: 2vh 0 0 2vw;
 }
+
+.navHomePage {
+  display: flex;
+  margin-left: 20vw;
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -60,16 +68,12 @@ a {
   text-align: center;
 }
 
-.navHomePage {
-  margin-left: 20vw;
-}
-
 .baseline {
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  margin-left: 46px;
+  margin-left: 2vw;
 }
 
 .conceptScroll {
@@ -78,7 +82,7 @@ a {
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-  margin-top: 350px;
+  margin-top: 40vh;
 }
 
 .arrowContainer {
