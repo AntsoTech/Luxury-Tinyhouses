@@ -1,2 +1,74 @@
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("./assets/Nunito/Nunito-Bold.ttf"); }
+
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("./assets/Nunito/Nunito-Light.ttf"); }
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("./assets/Nunito/Nunito-Regular.ttf"); }
+
 body {
-  background-color: red; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../assets/wp_homepage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 65%; }
+
+header {
+  display: flex;
+  align-items: center; }
+
+.homePage {
+  min-height: 100vh; }
+
+.egurLogo {
+  background-image: url("../assets/logo_final.svg");
+  width: 282px;
+  height: 174px;
+  margin: 38px 0 0 46px; }
+
+ul {
+  display: flex;
+  justify-content: center; }
+
+li {
+  list-style: none;
+  color: #fff;
+  margin: 0 3rem 0 2rem;
+  display: flex;
+  align-items: center; }
+
+a {
+  font-family: "Nunito-Bold", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center; }
+
+.navHomePage {
+  margin-left: 20vw; }
+
+.baseline {
+  color: #fff;
+  font-family: "Nunito-Regular", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin-left: 46px; }
+
+.conceptScroll {
+  color: #fff;
+  font-family: "Nunito-Regular", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 350px; }
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; }

@@ -8,7 +8,7 @@ header {
   }
 
 .egurLogo {
-    background-image: url("./assets/logo_final.svg");
+    background-image: url("../assets/logo_final.svg");
     width: 282px;
     height: 174px;
     margin: 38px 0 0 46px;
@@ -33,6 +33,9 @@ header {
     text-decoration: none;
     color: #fff;
     text-align: center;
+    // @media screen and (max-width : 800px) {
+    //   color:fuchsia;
+    // }
   }
   
   .navHomePage {
