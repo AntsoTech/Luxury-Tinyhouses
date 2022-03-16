@@ -1,13 +1,19 @@
 h1{
     text-align: center;
+    font-size: 4rem;
     
 }
 
 p{
     text-align: center;
+    font-size: 3rem;
     
 }
-
+h2{
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+}
 .image{
     display: flex;
     align-items:center;
@@ -29,27 +35,11 @@ p{
     object-fit: cover;
 }
 .image2 img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     position: relative;
-    top : -20%;
+    top : -50%;
 
 }
 
-
-/* FONTS */
-@font-face {
-    font-family: "Nunito-Bold";
-    src: url("./assets/Nunito/Nunito-Bold.ttf");
-  }
-  
-  @font-face {
-    font-family: "Nunito-Light";
-    src: url("./assets/Nunito/Nunito-Light.ttf");
-  }
-  
-  @font-face {
-    font-family: "Nunito-Regular";
-    src: url("./assets/Nunito/Nunito-Regular.ttf");
-  }
