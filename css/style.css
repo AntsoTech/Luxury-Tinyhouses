@@ -150,13 +150,15 @@ a {
   justify-content: center;
   margin-top: 2rem; }
 
+.projects {
+  background-color: #fff; }
+
 .image {
   display: flex;
   align-items: center;
   justify-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  /* position: absolute; */ }
+  justify-content: center; }
 
 .image div {
   width: 50%;
@@ -173,3 +175,13 @@ a {
   object-fit: cover;
   position: relative;
   top: -50%; }
+
+.image h3 {
+  font-family: "Nunito-Light";
+  color: #fff;
+  font-size: 3rem;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  margin-top: -17%;
+  margin-inline: 20%; }

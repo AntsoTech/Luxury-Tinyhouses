@@ -1,23 +1,30 @@
+.projects{
+    background-color: $secondColor;
+}
+
+
+
+
 .image{
     display: flex;
     align-items:center;
     justify-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    /* position: absolute; */
-
+    // position: absolute; 
 }
 
 .image div{
     width: 50%;
     height: 45vh;
-
 }
+
 .image1 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .image2 img{
     width: 100%;
     height: 100%;
@@ -26,3 +33,18 @@
     top : -50%;
 
 }
+
+.image h3{
+    font-family: "Nunito-Light";
+    color: #fff;
+    font-size: 3rem;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    margin-top: -17%;
+    margin-inline: 20%;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    // vertical-align: middle;
+  }
