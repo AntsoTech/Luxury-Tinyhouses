@@ -289,20 +289,21 @@ header {
     width: 5vw;
     height: 5vh;
     margin: 2vh 0 0 2vw; }
-  .nav2__menu_list {
+  .nav2__menu__list {
     display: flex;
-    justify-content: center;
-    justify-content: space-around; }
-  .nav2__menu_list_item {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    margin: 0 3rem 0 2rem;
-    display: flex;
-    align-items: center; }
-  .nav2__menu_list_item_title {
-    font-family: "Nunito-Bold", sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-    text-align: center; }
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none; }
+    .nav2__menu__list__item {
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      margin: 0 3rem 0 2rem;
+      display: flex;
+      align-items: center; }
+      .nav2__menu__list__item__title {
+        font-family: "Nunito-Bold", sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+        text-align: center; }
