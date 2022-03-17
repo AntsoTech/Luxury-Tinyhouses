@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: $secondColor;
     padding-top: 10vh;
+    font-family: "Nunito-Regular";
 
     &__quote {
         text-align: center;
@@ -16,22 +17,20 @@
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
         grid-template-rows: 10vw 10vw;
-        margin : 20px auto;
 
         &__realisation{
             grid-row: 1/3;
             display: flex;
             flex-direction: column;
-            background-image: url("assets/Vector2.png");
+            background-image: url("../assets/Vector\ 2.png");
         }
 
         &__respect {
-            margin: auto;
-            background-image: url("assets/Vector1.png");
+            background-image: url("../assets/Vector\ 1.png");
         }
 
         &__wood{   
-            margin: auto;
+            background-image: url("../assets/Vector\ 3.png");
         }
 
         
@@ -42,15 +41,8 @@
             &--leaf{
                 grid-column: 2/3;
                 grid-row: 1/3;
-                margin: auto;
             }
-            &--customize{
-                margin: auto;
-            }
-    
-            &--local{
-                margin: auto;
-            }
+
         }
 
     }
