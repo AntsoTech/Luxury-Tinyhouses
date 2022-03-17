@@ -112,6 +112,9 @@ a {
   color: #fff;
   text-align: center; }
 
+a:hover {
+  font-size: 26px; }
+
 .navHomePage {
   margin-left: 20vw; }
 
