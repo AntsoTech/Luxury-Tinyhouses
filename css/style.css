@@ -196,7 +196,7 @@ header {
   margin-top: 2rem;
   height: 3vh; }
 
-.navBar {
+.nav2 {
   background-color: #f1f1f1;
   border-bottom-width: 3px;
   border-bottom-color: black;
@@ -206,33 +206,28 @@ header {
   box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  height: 12vh;
   width: 100vw; }
-
-.navBar .egurLogoFixed {
-  background-image: url("../assets/logo_final_black.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 5vw;
-  height: 5vh;
-  margin: 2vh 0 0 2vw; }
-
-.navHomePageFixed > ul {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around; }
-
-.navHomePageFixed li {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  margin: 0 3rem 0 2rem;
-  display: flex;
-  align-items: center; }
-
-.navHomePageFixed a {
-  font-family: "Nunito-Bold", sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  color: black;
-  text-align: center; }
+  .nav2__logo {
+    background-image: url("../assets/logo_final_black.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+    margin: 2vh 0 0 2vw; }
+  .nav2__menu_list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around; }
+  .nav2__menu_list_item {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 0 3rem 0 2rem;
+    display: flex;
+    align-items: center; }
+  .nav2__menu_list_item_title {
+    font-family: "Nunito-Bold", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    text-align: center; }
