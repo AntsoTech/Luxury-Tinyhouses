@@ -1,29 +1,30 @@
 @font-face {
     font-family: "Nunito-Bold";
-    src: url("./assets/Nunito/Nunito-Bold.ttf");
+    src: url("../assets/Nunito/Nunito-Bold.ttf");
   }
   
   @font-face {
     font-family: "Nunito-Light";
-    src: url("./assets/Nunito/Nunito-Light.ttf");
+    src: url("../assets/Nunito/Nunito-Light.ttf");
   }
   
   @font-face {
     font-family: "Nunito-Regular";
-    src: url("./assets/Nunito/Nunito-Regular.ttf");
+    src: url("../assets/Nunito/Nunito-Regular.ttf");
   }
+  
   h1{
     text-align: center;
     font-size: 4rem;
     
 }
 
-p{
+blockquote{
     text-align: center;
     font-size: 3rem;
     
 }
-h2{
+figcaption{
     font-size: 2.5rem;
     font-style: italic;
     text-align: center;
