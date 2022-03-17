@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="index.js" defer></script>
     <title>EGUR EXTEA</title>
   </head>
   <body>
@@ -40,35 +41,52 @@
 
     <section class="concept"></section>
     <section class="projects"></section>
-    <!-- Début de la section histoire -->
-    <section id="histoire">
-        <h1>NOTRE HISTOIRE</h1>
-        <p class="histoireText">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
+    
+    <!-- Début de la page histoire -->
+
+    <section id="history">
+       <!-- Nav barre fixe apparait au scroll -->
+      <div class="navBar">
+        <div class="egurLogoFixed"></div>
+        <nav class="navHomePageFixed">
+          <ul class="navFixed">
+            <li><a href="#concept"> CONCEPT</a></li>
+            <li><a href="#projects"> NOS PROJETS </a></li>
+            <li><a href="#history"> NOTRE HISTOIRE </a></li>
+            <li><a href="#contact"> CONTACT </a></li>
+          </ul>
+        </nav>
+      </div>
+         <!-- Section histoire -->
+        <div id="histoire">
+          <h1>NOTRE HISTOIRE</h1>
+          <p class="histoireText">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
             Nous sommes 4, et avec vous et vos projets, nous sommes des millions. Nous voulons vous aider à créer un endroit spirituel, animé et qui vous ressemble. </p>
             <div class="teamContainer">
                 <div id="teamPicture">
                 </div>
-                <div class="teamSection">
-                    <h3 class="teamTitle">Notre équipe</h3>    
-                    <div class="teamCard">
-                        <h4>Antso Rakotoson <br>
-                        Ingénieur Structure
-                        </h4>
-                    </div>
-                    <div class="teamCard">
-                        <h4>Astrid Froitier  <br>
-                        Ingénieur Éco-conception</h4>
-                    </div>
-                    <div class="teamCard">
-                        <h4>Quentin Guérandel<br>
-                        Designer & Ébéniste</h4>
-                    </div>
-                    <div class="teamCard">
-                        <h4>Johnny Hiriart<br>
-                        Ingénieur Matériaux Bois</h4>
-                    </div>
-                </div>
+                  <div class="teamSection">
+                      <h3 class="teamTitle">Notre équipe</h3>    
+                      <div class="teamCard">
+                          <h4>Antso Rakotoson <br>
+                          Ingénieur Structure
+                          </h4>
+                      </div>
+                      <div class="teamCard">
+                          <h4>Astrid Froitier  <br>
+                          Ingénieur Éco-conception</h4>
+                      </div>
+                      <div class="teamCard">
+                          <h4>Quentin Guérandel<br>
+                          Designer & Ébéniste</h4>
+                      </div>
+                      <div class="teamCard">
+                          <h4>Johnny Hiriart<br>
+                          Ingénieur Matériaux Bois</h4>
+                      </div>
+                  </div>
             </div>
+        </div>
     </section>
     <section class="contact"></section>
     <footer>
