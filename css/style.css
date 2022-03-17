@@ -1,36 +1,98 @@
 @font-face {
   font-family: "Nunito-Bold";
-  src: url("./assets/Nunito/Nunito-Bold.ttf"); }
+  src: url("../assets/Nunito/Nunito-Bold.ttf"); }
 
 @font-face {
   font-family: "Nunito-Light";
-  src: url("./assets/Nunito/Nunito-Light.ttf"); }
+  src: url("../assets/Nunito/Nunito-Light.ttf"); }
 
 @font-face {
   font-family: "Nunito-Regular";
-  src: url("./assets/Nunito/Nunito-Regular.ttf"); }
+  src: url("../assets/Nunito/Nunito-Regular.ttf"); }
 
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-image: url("../assets/wp_homepage.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 80% 65%; }
+  box-sizing: border-box; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  background-color: #c4c4C4;
+  color: #fff;
+  font-family: "nunito", "abril"; }
+
+footer p {
+  margin: 0;
+  padding: 20px 0 20px 10px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+footer p img {
+  height: 40px;
+  padding-right: 5px; }
+
+.info {
+  width: 50%;
+  border-right: #fff 0.1rem solid; }
+
+.socialNetwork {
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10%; }
+
+.socialNetwork img {
+  padding: 0 40px 0 20px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  background-color: #c4c4C4;
+  color: #fff;
+  font-family: "nunito", "abril"; }
+
+footer p {
+  margin: 0;
+  padding: 20px 0 20px 10px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+footer p img {
+  height: 40px;
+  padding-right: 5px; }
+
+.info {
+  width: 50%;
+  border-right: #fff 0.1rem solid; }
+
+.socialNetwork {
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10%; }
+
+.socialNetwork img {
+  padding: 0 40px 0 20px; }
+
+.homePage {
+  min-height: 100vh; }
 
 header {
   display: flex;
   align-items: center; }
 
-.homePage {
-  min-height: 100vh; }
-
 .egurLogo {
   background-image: url("../assets/logo_final.svg");
-  width: 282px;
-  height: 174px;
-  margin: 38px 0 0 46px; }
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 20vh;
+  margin: 2vh 0 0 2vw; }
 
 ul {
   display: flex;
@@ -53,12 +115,70 @@ a {
 .navHomePage {
   margin-left: 20vw; }
 
+#histoire {
+  background-color: #fff; }
+
+#histoire h1 {
+  font-size: 3vw;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  background-image: url("../assets/Rectangle_20.svg");
+  background-size: 25vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 75%; }
+
+.histoireText {
+  font-size: 30px;
+  font-family: "Nunito-Light";
+  margin-left: 3vw;
+  margin-right: 3vw; }
+
+#teamPicture {
+  background-image: url("../assets/team exemple.jpeg");
+  background-size: cover;
+  width: 650px;
+  height: 350px;
+  background-position-x: -100px; }
+
+.teamContainer {
+  display: flex;
+  justify-content: space-around; }
+
+.teamSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-area: 1 / 4 / 3 / 2;
+  height: 20vh; }
+
+.teamSection h3 {
+  grid-area: 1 / 3 / 2 / 1;
+  text-align: left;
+  font-size: 28px;
+  font-family: "Nunito-Regular", sans-serif; }
+
+.teamCard {
+  font-size: 24px;
+  font-family: "Nunito-Light", sans-serif; }
+
+.bgVideo {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1; }
+
 .baseline {
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  margin-left: 46px; }
+  margin-left: 2vw; }
 
 .conceptScroll {
   color: #fff;
@@ -66,9 +186,10 @@ a {
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-  margin-top: 350px; }
+  margin-top: 40vh; }
 
 .arrowContainer {
   display: flex;
   justify-content: center;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  height: 3vh; }
