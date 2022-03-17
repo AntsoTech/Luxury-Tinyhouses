@@ -1,14 +1,26 @@
 @font-face {
-    font-family: "Nunito-Bold";
-    src: url("../assets/Nunito/Nunito-Bold.ttf");
-  }
-  
-  @font-face {
-    font-family: "Nunito-Light";
-    src: url("../assets/Nunito/Nunito-Light.ttf");
-  }
-  
-  @font-face {
-    font-family: "Nunito-Regular";
-    src: url("../assets/Nunito/Nunito-Regular.ttf");
-  }
+  font-family: "Nunito-Bold";
+  src: url("../assets/Nunito/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../assets/Nunito/Nunito-Light.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("../assets/Nunito/Nunito-Regular.ttf");
+}
+
+h1 {
+  font-size: 3vw;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  background-image: url("../assets/Rectangle_20.svg");
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 75%;
+  margin-top: 0;
+}
