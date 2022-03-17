@@ -11,6 +11,7 @@
   </head>
   <body>
     <section class="homePage">
+      <video class="bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
       <header>
         <div class="egurLogo"></div>
         <nav class="navHomePage">
@@ -39,7 +40,6 @@
 
     <section class="concept"></section>
     <section class="projects"></section>
-
     <!-- Début de la section histoire -->
     <section id="histoire">
         <h1>NOTRE HISTOIRE</h1>
@@ -70,7 +70,32 @@
                 </div>
             </div>
     </section>
-    <section class="contact"></section>
+    <section class="contact" id="contact">
+<h1>ON SE RENCONTRE ?</h1>
+<p class="contact__text">Nous sommes là pour vous, pour vous raconter notre histoire et pour vous permettre d’écrire la vôtre. <br>
+On se boit un café ? ☕</p>
+
+<div class="contact__container">
+
+
+<form class="contact__container__form"> 
+    
+    <input class="contact__container__form__input"type="text" id="fname" name="fname" value="Prénom*">
+    <input class="contact__container__form__input"type="text" id="lname" name="lname" value="Nom*">
+    <input class="contact__container__form__input"type="text" id="email" name="email" value="Email*">
+    <input class="contact__container__form__input"type="text" id="phoneNumber" name="phoneNumber" value="Numéro de téléphone*">
+    <textarea class="contact__container__form__textarea" id="message" name="message"
+    rows="10" cols="33">
+Mon message à l'équipe EGUR ETXEA</textarea> 
+    <button class="contact__container__form__button">Envoyer</button>
+  </form> 
+  <div class="contact__container__img"></div>
+
+</div>
+
+    </section>
+
+
     <footer>
         <div class="info">
             <p>
