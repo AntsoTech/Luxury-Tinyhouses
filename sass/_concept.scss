@@ -1,0 +1,49 @@
+
+.concept{
+    height: 100vh;
+    background-color: $secondColor;
+    padding-top: 10vh;
+    font-family: "Nunito-Regular";
+
+    &__quote {
+        text-align: center;
+
+        &__author{
+            font-style: oblique;
+        }
+    }
+
+    &__philosophy{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 10vw 10vw;
+
+        &__realisation{
+            grid-row: 1/3;
+            display: flex;
+            flex-direction: column;
+            background-image: url("../assets/Vector\ 2.png");
+        }
+
+        &__respect {
+            background-image: url("../assets/Vector\ 1.png");
+        }
+
+        &__wood{   
+            background-image: url("../assets/Vector\ 3.png");
+        }
+
+        
+        &__img{
+            height: 10vh;
+            width: 10vw;
+
+            &--leaf{
+                grid-column: 2/3;
+                grid-row: 1/3;
+            }
+
+        }
+
+    }
+}
