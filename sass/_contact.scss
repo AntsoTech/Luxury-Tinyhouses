@@ -58,7 +58,7 @@
         padding-top: 1rem;
       }
       &__button {
-        background-color: #00c9ad;
+        background-color: #333333;
         border: none;
         margin-top: 2vh;
         width: 10vw;
@@ -67,6 +67,12 @@
         color: $secondColor;
         font-size: 1.4rem;
         align-self: center;
+        transition: background-color 0.3s;
+
+        // Au survol de la souris
+        &:hover {
+          background-color: #00c9ad;
+        }
       }
     }
   }
