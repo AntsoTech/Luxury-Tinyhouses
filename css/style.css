@@ -21,6 +21,9 @@ h1 {
   background-position-y: 75%;
   margin-top: 0; }
 
+:root {
+  font-size: 16px; }
+
 body {
   margin: 0;
   padding: 0;
@@ -183,41 +186,45 @@ footer p img {
 .socialNetwork img {
   padding: 0 40px 0 20px; }
 
-.homePage {
-  min-height: 100vh; }
-
 header {
   display: flex;
   align-items: center; }
 
-.egurLogo {
-  background-image: url("../assets/logo_final.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20vw;
-  height: 20vh;
-  margin: 2vh 0 0 2vw; }
-
-.navHomePage ul {
-  display: flex;
-  justify-content: center; }
-
-.navHomePage li {
-  list-style: none;
-  color: #fff;
-  margin: 0 3rem 0 2rem;
-  display: flex;
-  align-items: center; }
-
-.navHomePage a {
-  font-family: "Nunito-Bold", sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  color: #fff;
-  text-align: center; }
-
-.navHomePage {
-  margin-left: 20vw; }
+.homePage {
+  min-height: 100vh; }
+  .homePage__bgVideo {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; }
+  .homePage__egurLogo {
+    background-image: url("../assets/logo_final.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vh;
+    margin: 2rem 0 0 2rem; }
+  .homePage__navList {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem; }
+    .homePage__navList__li {
+      list-style: none;
+      color: #fff;
+      margin: 0 3rem 0 2rem;
+      display: flex;
+      align-items: center; }
+      .homePage__navList__li__link {
+        font-family: "Nunito-Bold", sans-serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #fff;
+        text-align: center; }
 
 #history {
   background-color: #fff;
@@ -268,31 +275,20 @@ header {
   font-size: 24px;
   font-family: "Nunito-Light", sans-serif; }
 
-.bgVideo {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1; }
-
 .baseline {
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3rem;
   margin-left: 2vw; }
 
 .conceptScroll {
   color: #fff;
   font-family: "Nunito-Regular", sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.6rem;
   text-align: center;
-  margin-top: 40vh; }
+  margin-top: 20rem; }
 
 .arrowContainer {
   display: flex;
@@ -328,7 +324,6 @@ header {
       text-decoration: none;
       color: black;
       margin: 0 3rem 0 2rem;
-      display: flex;
       align-items: center; }
       .nav2__menu__list__item__title {
         font-family: "Nunito-Bold", sans-serif;
