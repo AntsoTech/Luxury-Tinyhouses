@@ -1,5 +1,6 @@
-#histoire{
+#history{
     background-color: $secondColor;
+    height: 100vh;
 }
 
 #histoire h1 {
@@ -26,7 +27,9 @@
     width: 650px;
     height: 350px;
     background-position-x: -100px;
+    background-repeat: no-repeat;
 }
+
 .teamContainer {
     display: flex;
     justify-content: space-around;
