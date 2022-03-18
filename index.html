@@ -11,18 +11,18 @@
     <title>EGUR EXTEA</title>
   </head>
   <body>
-    <section class="homePage">
-      <video class="bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
+    <section class="homePage" id="homePage">
+      <video class="homePage__bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
       <header>
-        <div class="egurLogo"></div>
-        <nav class="navHomePage">
-          <ul class="navHP">
-            <li><a href="#concept"> CONCEPT</a></li>
-            <li><a href="#projects"> NOS PROJETS </a></li>
-            <li><a href="#history"> NOTRE HISTOIRE </a></li>
-            <li><a href="#contact"> CONTACT </a></li>
+        <div class="homePage__egurLogo"></div>
+       
+          <ul class="homePage__navList">
+            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#concept"> CONCEPT</a></li>
+            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#projects"> NOS PROJETS </a></li>
+            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#history"> NOTRE HISTOIRE </a></li>
+            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#contact"> CONTACT </a></li>
           </ul>
-        </nav>
+        
       </header>
       <h2 class="baseline">
         Créateur d’expériences <br />
@@ -38,8 +38,35 @@
         </a>
       </div>
     </section>
+<!-- start concept -->
+    <section class="concept">
+      <h1>
+        NOTRE CONCEPT
+      </h1>
+      <blockquote class="concept__quote">
+         "Si vous ne pouvez expliquer un concept à un enfant de six ans, c'est que vous ne le comprenez pas complètement."
+        <figcaption class="concept__quote__author">Albert Einstein</figcaption> 
+      </blockquote>
+      <div class="concept__philosophy">
+        <img class="concept__philosophy__img--leaf" src="assets/noun-leaf-69542 1.png" alt="logo eco">
+        <div class="concept__philosophy__realisation">
+          Des Tiny-Houses éco-conçues respectant la faune et la flore.
+        </div>          
+        <img class="concept__philosophy__img--customize" src="assets/noun-customize-196321 1.png" alt="logo client">
+        <div class="concept__philosophy__respect">
+       
+          Travailler des concepts uniques, des réalisations sur-mesure.
+        </div>
+        <img class="concept__philosophy__img--local" src="assets/noun-local-3266028 1.png" alt="logo location">
+        <div class="concept__philosophy__wood">
 
-    <section class="concept"></section>
+          Favoriser le développement local avec des matériaux de nos régions.
+        </div>
+      </div>
+    </section>
+    <!-- end concept -->
+
+<!-- start project -->
     <section class="projects"></section>
     
     <!-- Début de la page histoire -->
@@ -58,29 +85,29 @@
         </div>
       </div>
          <!-- Section histoire -->
-        <div id="histoire">
+        <div id="histoire" class="histoire">
           <h1>NOTRE HISTOIRE</h1>
-          <p class="histoireText">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
+          <p class="histoire__text">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
             Nous sommes 4, et avec vous et vos projets, nous sommes des millions. Nous voulons vous aider à créer un endroit spirituel, animé et qui vous ressemble. </p>
-            <div class="teamContainer">
-                <div id="teamPicture">
+          <div class="histoire__team">
+                <div class="histoire__team__picture">
                 </div>
-                  <div class="teamSection">
-                      <h3 class="teamTitle">Notre équipe</h3>    
-                      <div class="teamCard">
+                  <div class="histoire__team__section">
+                      <h3 class="histoire__team__section__title">Notre équipe</h3>    
+                      <div class="histoire__team__section__card">
                           <h4>Antso Rakotoson <br>
                           Ingénieur Structure
                           </h4>
                       </div>
-                      <div class="teamCard">
+                      <div class="histoire__team__section__card">
                           <h4>Astrid Froitier  <br>
                           Ingénieur Éco-conception</h4>
                       </div>
-                      <div class="teamCard">
+                      <div class="histoire__team__section__card">
                           <h4>Quentin Guérandel<br>
                           Designer & Ébéniste</h4>
                       </div>
-                      <div class="teamCard">
+                      <div class="histoire__team__section__card">
                           <h4>Johnny Hiriart<br>
                           Ingénieur Matériaux Bois</h4>
                       </div>
