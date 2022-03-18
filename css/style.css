@@ -117,13 +117,14 @@ html {
         margin-top: 2vh;
         width: 10vw;
         height: 4vh;
-        border-radius: 0.8rem;
         color: #fff;
         font-size: 1.4rem;
         align-self: center;
-        transition: background-color 0.3s; }
+        transition: background-color 0.3s;
+        transition: border-radius 0.3s; }
         .contact__container__form__button:hover {
-          background-color: #00c9ad; }
+          background-color: #1ecd97;
+          border-radius: 0.8rem; }
 
 footer {
   display: flex;
