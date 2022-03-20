@@ -1,5 +1,6 @@
 .nav2 {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
+    opacity: 0.94;
     border-bottom-width: 3px;
     border-bottom-color: black;
     display: none;
@@ -14,12 +15,15 @@
             background-image: url("../assets/logo_final_black.svg");
             background-size: contain;
             background-repeat: no-repeat;
-            width: 7vw;
-            height: 7vh;
-            margin: 2vh 0 0 2vw;
+            width: 6vw;
+            height: 6vh;
+            margin: 1vh 0 0 1vw;
         }
 
         &__menu {
+
+            display: flex;
+
                 &__list {
                     display:flex;
                     flex-direction: row;
@@ -27,6 +31,7 @@
                     list-style: none;
 
                     &__item {
+                        display: flex;
                         list-style: none;
                         text-decoration: none;
                         color: rgb(0, 0, 0);
@@ -35,7 +40,7 @@
 
                         &__title {
                             font-family: "Nunito-Bold", sans-serif;
-                            font-size: 24px;
+                            font-size: 1.2rem;
                             text-decoration: none;
                             color: rgb(0, 0, 0);
                             text-align: center;

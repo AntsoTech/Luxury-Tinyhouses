@@ -331,6 +331,7 @@ header {
 
 .nav2 {
   background-color: #f1f1f1;
+  opacity: 0.8;
   border-bottom-width: 3px;
   border-bottom-color: black;
   display: none;
@@ -344,23 +345,26 @@ header {
     background-image: url("../assets/logo_final_black.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 7vw;
-    height: 7vh;
-    margin: 2vh 0 0 2vw; }
-  .nav2__menu__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none; }
-    .nav2__menu__list__item {
-      list-style: none;
-      text-decoration: none;
-      color: black;
-      margin: 0 3rem 0 2rem;
-      align-items: center; }
-      .nav2__menu__list__item__title {
-        font-family: "Nunito-Bold", sans-serif;
-        font-size: 24px;
+    width: 6vw;
+    height: 6vh;
+    margin: 1vh 0 0 1vw; }
+  .nav2__menu {
+    display: flex; }
+    .nav2__menu__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none; }
+      .nav2__menu__list__item {
+        display: flex;
+        list-style: none;
         text-decoration: none;
         color: black;
-        text-align: center; }
+        margin: 0 3rem 0 2rem;
+        align-items: center; }
+        .nav2__menu__list__item__title {
+          font-family: "Nunito-Bold", sans-serif;
+          font-size: 1.2rem;
+          text-decoration: none;
+          color: black;
+          text-align: center; }
