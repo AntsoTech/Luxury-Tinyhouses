@@ -330,8 +330,8 @@ header {
     transform: translateY(-15px); } }
 
 .nav2 {
-  background-color: #f1f1f1;
-  opacity: 0.8;
+  background-color: white;
+  opacity: 0.94;
   border-bottom-width: 3px;
   border-bottom-color: black;
   display: none;
@@ -349,22 +349,33 @@ header {
     height: 6vh;
     margin: 1vh 0 0 1vw; }
   .nav2__menu {
-    display: flex; }
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; }
     .nav2__menu__list {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      list-style: none; }
+      list-style: none;
+      margin: 0;
+      padding: 0;}
       .nav2__menu__list__item {
         display: flex;
         list-style: none;
-        text-decoration: none;
-        color: black;
-        margin: 0 3rem 0 2rem;
-        align-items: center; }
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        min-width: 200px; }
+        .nav2__menu__list__item:hover {
+          background-color: black;
+          color: white; }
         .nav2__menu__list__item__title {
           font-family: "Nunito-Bold", sans-serif;
-          font-size: 1.2rem;
+          font-size: 1rem;
           text-decoration: none;
           color: black;
           text-align: center; }
+          .nav2__menu__list__item__title:hover {
+            color: white; }
