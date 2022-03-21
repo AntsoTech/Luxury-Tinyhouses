@@ -237,7 +237,7 @@ header {
   height: 100vh; }
 
 .histoire {
-  margin-top: 3vh; }
+  padding-top: 3vh; }
   .histoire__text {
     font-size: 1.5rem;
     font-family: "Nunito-Light";
@@ -330,10 +330,11 @@ header {
     transform: translateY(-15px); } }
 
 .nav2 {
-  background-color: #f1f1f1;
+  background-color: white;
+  opacity: 0.94;
   border-bottom-width: 3px;
   border-bottom-color: black;
-  display: flex;
+  display: none;
   justify-content: space-between;
   margin-bottom: 0;
   box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
@@ -344,23 +345,37 @@ header {
     background-image: url("../assets/logo_final_black.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 5vw;
-    height: 5vh;
-    margin: 2vh 0 0 2vw; }
-  .nav2__menu__list {
+    width: 6vw;
+    height: 6vh;
+    margin: 1vh 0 0 1vw; }
+  .nav2__menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none; }
-    .nav2__menu__list__item {
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; }
+    .nav2__menu__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       list-style: none;
-      text-decoration: none;
-      color: black;
-      margin: 0 3rem 0 2rem;
-      align-items: center; }
-      .nav2__menu__list__item__title {
-        font-family: "Nunito-Bold", sans-serif;
-        font-size: 24px;
-        text-decoration: none;
-        color: black;
-        text-align: center; }
+      margin: 0;
+      padding: 0;}
+      .nav2__menu__list__item {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        min-width: 200px; }
+        .nav2__menu__list__item:hover {
+          background-color: black;
+          color: white; }
+        .nav2__menu__list__item__title {
+          font-family: "Nunito-Bold", sans-serif;
+          font-size: 1rem;
+          text-decoration: none;
+          color: black;
+          text-align: center; }
+          .nav2__menu__list__item__title:hover {
+            color: white; }
