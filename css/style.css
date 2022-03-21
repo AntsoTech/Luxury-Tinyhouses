@@ -11,6 +11,7 @@
   src: url("../assets/Nunito/Nunito-Regular.ttf"); }
 
 h1 {
+<<<<<<< HEAD
   font-size: 3rem;
   font-family: "Nunito-Regular";
   text-align: center;
@@ -23,6 +24,19 @@ h1 {
 
 :root {
   font-size: 16px; }
+=======
+  text-align: center;
+  font-size: 4rem; }
+
+blockquote {
+  text-align: center;
+  font-size: 3rem; }
+
+figcaption {
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center; }
+>>>>>>> 9a29e20ab163d10a687ce9c60b33d8c0269e25ac
 
 body {
   margin: 0;
@@ -285,6 +299,7 @@ header {
 .arrowContainer {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   margin-top: 3vh;
   height: 3vh;
   -webkit-animation-duration: 1s;
@@ -379,3 +394,30 @@ header {
           text-align: center; }
           .nav2__menu__list__item__title:hover {
             color: white; }
+=======
+  margin-top: 2rem; }
+
+.projects {
+  background-color: #fff; }
+  .projects__images {
+    display: flex;
+    align-items: center; }
+    .projects__images__image1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-flow: column; }
+    .projects__images__image2 img {
+      width: 70%;
+      height: 100%;
+      margin-left: 15%;
+      object-fit: cover;
+      top: -50%; }
+    .projects__images__image1 img {
+      color: #a03c3c;
+      font-size: 3rem;
+      z-index: 10;
+      display: flex;
+      margin-top: -17%;
+      margin-inline: 20%; }
+>>>>>>> 9a29e20ab163d10a687ce9c60b33d8c0269e25ac

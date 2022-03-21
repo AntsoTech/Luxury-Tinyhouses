@@ -1,4 +1,5 @@
 @font-face {
+<<<<<<< HEAD
   font-family: "Nunito-Bold";
   src: url("../assets/Nunito/Nunito-Bold.ttf");
 }
@@ -24,3 +25,36 @@ h1 {
   background-position-y: 75%;
   margin-top: 0;
 }
+=======
+    font-family: "Nunito-Bold";
+    src: url("../assets/Nunito/Nunito-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Nunito-Light";
+    src: url("../assets/Nunito/Nunito-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: "Nunito-Regular";
+    src: url("../assets/Nunito/Nunito-Regular.ttf");
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+blockquote{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+figcaption{
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    
+}
+>>>>>>> 9a29e20ab163d10a687ce9c60b33d8c0269e25ac
