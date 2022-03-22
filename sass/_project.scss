@@ -11,7 +11,9 @@
         justify-content: space-around;
 
         &__plus {
-            width: 20px;
+        background-color: transparent;  
+        border: 0;   
+        cursor: pointer;
         }
 
         &__card1 {
@@ -25,6 +27,10 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+
+            
+
+
         }
 
         &__card2 {

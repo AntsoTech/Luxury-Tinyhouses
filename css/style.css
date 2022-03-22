@@ -423,7 +423,9 @@ header {
     align-items: center;
     justify-content: space-around; }
     .projects__section__plus {
-      width: 20px; }
+      background-color: transparent;
+      border: 0;
+      cursor: pointer; }
     .projects__section__card1 {
       width: 49%;
       height: 55vh;
