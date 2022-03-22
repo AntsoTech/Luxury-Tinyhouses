@@ -14,15 +14,23 @@
     <section class="homePage" id="homePage">
       <video class="homePage__bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
        <!-- Nav barre de la page d'accueil -->
-      <header id="nav1">
+      <header id="nav1" class="nav1">
         <div class="homePage__egurLogo"></div>
        
-          <ul class="homePage__navList">
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#concept"> CONCEPT</a></li>
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#projects"> NOS PROJETS </a></li>
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#history"> NOTRE HISTOIRE </a></li>
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#contact"> CONTACT </a></li>
+          <ul class="nav1__navList">
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#concept"> CONCEPT</a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#projects"> NOS PROJETS </a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#history"> NOTRE HISTOIRE </a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#contact"> CONTACT </a></li>
           </ul>
+
+          <!-- Div container pour la création du hamburger button -->
+          <div class="nav1__container" onclick="myFunction(this)">
+            <div class="nav1__container__bar1"></div>
+            <div class="nav1__container__bar2"></div>
+            <div class="nav1__container__bar3"></div>
+          </div>
+          
       </header>
              <!-- Nav barre fixe apparait au scroll -->
              <div class="nav2" id="nav2">
@@ -36,15 +44,15 @@
                   </ul>
                 </div>
             </div>
-      <h2 class="baseline">
+      <h2 class="homePage__baseline">
         Créateur d’expériences <br />
         de vies mémorables
       </h2>
-      <div class="conceptScroll">
+      <div class="homePage__conceptScroll">
         DÉCOUVRIR <br />
         NOTRE CONCEPT
       </div>
-      <div class="arrowContainer">
+      <div class="homePage__arrowContainer">
         <a href="#concept">
           <img src="./assets/arrow-down-circle.svg" alt="Découvrir le concept" width="50vw" />
         </a>
