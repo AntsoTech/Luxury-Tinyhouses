@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  //Container qui apparait que sur la media query
+  //Container qui apparait uniquement sur la media query
   &__container {
     display: none;
     @media all and (max-width: 736px) {
@@ -52,17 +52,17 @@
   }
 }
 
-//Changeme de classe au toggle cf. index.js pour les 3 barres
-.change .nav1__container__bar1 {
+//Changement de classe au toggle (cf. index.js) pour les 3 barres
+.changeBurger .nav1__container__bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .nav1__container__bar2 {
+.changeBurger .nav1__container__bar2 {
   opacity: 0;
 }
 
-.change .nav1__container__bar3 {
+.changeBurger .nav1__container__bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }

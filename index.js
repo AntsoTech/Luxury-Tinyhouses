@@ -15,6 +15,6 @@ document.addEventListener("scroll", function () {
 });
 
 // Script pour la transfo du hamburger button les amis
-function myFunction(x) {
-  x.classList.toggle("change");
+function myFunction(element) {
+  element.classList.toggle("changeBurger");
 }
