@@ -431,7 +431,7 @@ html {
   background-color: #fff;
   height: 100vh;
   padding-top: 3vh;
-  padding-bottom: 24%; }
+  padding-bottom: 30%; }
   .projects__section {
     display: flex;
     flex-wrap: wrap;
@@ -452,6 +452,11 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card1 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
     .projects__section__card2 {
       width: 49%;
       height: 55vh;
@@ -462,6 +467,11 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card2 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
     .projects__section__card3 {
       margin-top: 1%;
       width: 49%;
@@ -473,3 +483,8 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card3 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
