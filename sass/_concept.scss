@@ -9,8 +9,9 @@
         font-family: "Nunito-Regular";
         font-size: 30px;
         text-align: center;
+        font-style: oblique;
         &__author{
-            font-style: oblique;
+            font-style: normal;
         }
     }
 
@@ -73,12 +74,16 @@
                     align-self: center;
                     height: 10vh;
                     width: 10vh;
+                    justify-self: right;
+                    padding-right: 4vh;
                 }
 
                 &--local{
                     align-self: center;
                     height: 10vh;
                     width: 10vh;
+                    justify-self: right;
+                    padding-right: 4vh;
                 }
             }
         }

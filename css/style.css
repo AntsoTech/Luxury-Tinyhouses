@@ -40,9 +40,10 @@ html {
   .concept__quote {
     font-family: "Nunito-Regular";
     font-size: 30px;
-    text-align: center; }
+    text-align: center;
+    font-style: oblique; }
     .concept__quote__author {
-      font-style: oblique; }
+      font-style: normal; }
   .concept__ourPhilosophy__vector2 {
     position: absolute;
     top: 155vh; }
@@ -80,11 +81,15 @@ html {
     .concept__ourPhilosophy__philosophy__img--customize {
       align-self: center;
       height: 10vh;
-      width: 10vh; }
+      width: 10vh;
+      justify-self: right;
+      padding-right: 4vh; }
     .concept__ourPhilosophy__philosophy__img--local {
       align-self: center;
       height: 10vh;
-      width: 10vh; }
+      width: 10vh;
+      justify-self: right;
+      padding-right: 4vh; }
 
 .contact {
   background-color: #fff;
