@@ -15,11 +15,17 @@ h1 {
   font-family: "Nunito-Regular";
   text-align: center;
   background-image: url("../assets/Rectangle_20.svg");
-  background-size: 30vw;
+  background-size: 20vw;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 75%;
   margin-top: 0; }
+
+h3 {
+  font-size: 2rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: white; }
 
 :root {
   font-size: 16px; }
@@ -39,10 +45,11 @@ html {
   font-family: "Nunito-Regular"; }
   .concept__quote {
     font-family: "Nunito-Regular";
-    font-size: 30px;
+    font-size: 1.6rem;
     text-align: center; }
     .concept__quote__author {
-      font-style: oblique; }
+      font-style: oblique;
+      font-size: 1.3rem; }
   .concept__ourPhilosophy__vector2 {
     position: absolute;
     top: 155vh; }
@@ -386,3 +393,50 @@ header {
           text-align: center; }
           .nav2__menu__list__item__title:hover {
             color: white; }
+
+.projects {
+  background-color: #fff;
+  height: 100vh;
+  padding-top: 3vh;
+  padding-bottom: 24%; }
+  .projects__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; }
+    .projects__section__plus {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer; }
+    .projects__section__card1 {
+      width: 49%;
+      height: 55vh;
+      background-image: url("../assets/tinyHouseProject1.jpg");
+      background-position: center;
+      background-size: 700px;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .projects__section__card2 {
+      width: 49%;
+      height: 55vh;
+      background-image: url("../assets/tinyHouseProject2.jpeg");
+      background-size: 700px;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .projects__section__card3 {
+      margin-top: 1%;
+      width: 49%;
+      height: 55vh;
+      background-image: url("../assets/tinyHouseProject4.jpeg");
+      background-size: 700px;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
