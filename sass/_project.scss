@@ -1,0 +1,64 @@
+.projects {
+    background-color: $secondColor;
+    height: 100vh;
+    padding-top: 3vh;
+    padding-bottom: 24%;
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        &__plus {
+        background-color: transparent;  
+        border: 0;   
+        cursor: pointer;
+        }
+
+        &__card1 {
+            width: 49%;
+            height: 55vh;
+            background-image: url("../assets/tinyHouseProject1.jpg");
+            background-position: center;   
+            background-size: 700px;
+            align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            
+
+
+        }
+
+        &__card2 {
+            width: 49%;
+            height: 55vh;
+            background-image: url("../assets/tinyHouseProject2.jpeg");
+            background-size: 700px;
+            background-position: center;   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+
+        &__card3 {
+            margin-top: 1%;
+            width: 49%;
+            height: 55vh;
+            background-image: url("../assets/tinyHouseProject4.jpeg");
+            background-size: 700px;
+            background-position: center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        } 
+        
+    }
+}
+

@@ -18,3 +18,12 @@ document.addEventListener("scroll", function () {
 function myFunction(element) {
   element.classList.toggle("changeBurger");
 }
+
+// Projects section - buttons 
+const card1 = document.getElementById("card1");
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
+
+// document.addEventListener ('clic', function(card) {
+//     if (card)
+// }
