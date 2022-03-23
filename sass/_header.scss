@@ -1,42 +1,64 @@
-header {
+.nav1 {
   display: flex;
   align-items: center;
-}
 
-.homePage {
-  min-height: 100vh;
-
-  &__bgVideo {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
+  //Container qui apparait uniquement sur la media query
+  &__container {
+    display: none;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
+    right: 5vw;
 
-  &__egurLogo {
-    background-image: url("../assets/logo_final.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20vw;
-    height: 20vh;
-    margin: 2rem 0 0 2rem;
+    @media all and (max-width: 736px) {
+      display: inline-block;
+      cursor: pointer;
+      position: fixed right;
+      margin-left: 26vw;
+      margin-bottom: 10vh;
+      z-index: 10;
+
+      &__bar {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        &--white {
+          background-color: #fff;
+        }
+      }
+    }
   }
 
   &__navList {
     display: flex;
     justify-content: center;
     margin-left: 20rem;
+
+    @media all and (max-width: 736px) {
+      display: none;
+      margin: 0;
+      flex-direction: column;
+      background-color: rgba(51, 51, 51, 0.7);
+      height: 200vh;
+      width: 50vw;
+      padding: 0;
+      position: fixed;
+      right: 0;
+      padding-top: 20vh;
+      margin-top: 10vh;
+    }
+    //Rendre visible la navbar mobile
+    &--visible {
+      display: flex;
+    }
+
     &__li {
       list-style: none;
       color: #fff;
       margin: 0 3rem 0 2rem;
       display: flex;
       align-items: center;
+
       &__link {
         font-family: "Nunito-Bold", sans-serif;
         font-size: 1.4rem;
@@ -46,7 +68,27 @@ header {
         &:hover {
           text-decoration: underline;
         }
+
+        @media all and (max-width: 736px) {
+          display: flex;
+          margin: 0;
+          font-size: 2rem;
+          padding-top: 5vh;
+        }
       }
     }
+  }
+
+  //Changement de classe au toggle (cf. index.js) pour les 3 barres
+  .changeBurger .nav1__container__bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .changeBurger .nav1__container__bar2 {
+    opacity: 0;
+  }
+
+  .changeBurger .nav1__container__bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
   }
 }

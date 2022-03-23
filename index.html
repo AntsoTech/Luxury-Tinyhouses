@@ -14,15 +14,23 @@
     <section class="homePage" id="homePage">
       <video class="homePage__bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
        <!-- Nav barre de la page d'accueil -->
-      <header id="nav1">
+      <header id="nav1" class="nav1">
         <div class="homePage__egurLogo"></div>
        
-          <ul class="homePage__navList">
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#concept"> CONCEPT</a></li>
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#projects"> NOS PROJETS </a></li>
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#history"> NOTRE HISTOIRE </a></li>
-            <li class="homePage__navList__li"><a class="homePage__navList__li__link" href="#contact"> CONTACT </a></li>
+          <ul class="nav1__navList">
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#concept"> CONCEPT</a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#projects"> NOS PROJETS </a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#history"> NOTRE HISTOIRE </a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#contact"> CONTACT </a></li>
           </ul>
+
+          <!-- Div container pour la création du hamburger button -->
+          <div class="nav1__container" onclick="myFunction(this)">
+            <div class="nav1__container__bar nav1__container__bar1"></div>
+            <div class="nav1__container__bar nav1__container__bar2"></div>
+            <div class="nav1__container__bar nav1__container__bar3"></div>
+          </div>
+          
       </header>
              <!-- Nav barre fixe apparait au scroll -->
              <div class="nav2" id="nav2">
@@ -36,15 +44,15 @@
                   </ul>
                 </div>
             </div>
-      <h2 class="baseline">
+      <h2 class="homePage__baseline">
         Créateur d’expériences <br />
         de vies mémorables
       </h2>
-      <div class="conceptScroll">
+      <div class="homePage__conceptScroll">
         DÉCOUVRIR <br />
         NOTRE CONCEPT
       </div>
-      <div class="arrowContainer">
+      <div class="homePage__arrowContainer">
         <a href="#concept">
           <img src="./assets/arrow-down-circle.svg" alt="Découvrir le concept" width="50vw" />
         </a>
@@ -61,23 +69,19 @@
       </blockquote>
       <div class="concept__ourPhilosophy">
 
-        <img class="concept__ourPhilosophy__vector2" src="assets/vector2.png" alt="realisation background">
-        <img class="concept__ourPhilosophy__vector1" src="assets/vector1.png" alt="respect background">
-        <img class="concept__ourPhilosophy__vector3" src="assets/vector3.png" alt="wood background">
-
         <div class="concept__ourPhilosophy__philosophy">
 
-          <img class="concept__ourPhilosophy__philosophy__img--leaf" src="assets/noun-leaf-69542 1.png" alt="logo eco">
+          <img class="concept__ourPhilosophy__philosophy__img concept__ourPhilosophy__philosophy__img--left" src="assets/noun-leaf-69542 1.png" alt="logo eco" max-width="100%"> 
           <div class="concept__ourPhilosophy__philosophy__realisation">
-          <span>Tiny-Houses éco-conçues</span> respectant la faune et la flore.
+          Tiny-Houses éco-conçues respectant la faune et la flore.
           </div>          
-          <img class="concept__ourPhilosophy__philosophy__img--customize" src="assets/noun-customize-196321 1.png" alt="logo client">
+          <img class="concept__ourPhilosophy__philosophy__img concept__ourPhilosophy__philosophy__img--right" src="assets/noun-customize-196321 1.png" alt="logo client">
           <div class="concept__ourPhilosophy__philosophy__respect">
-          Travailler des concepts uniques, <span>des réalisations sur-mesure.</span> 
+          Travailler des concepts uniques, des réalisations sur-mesure.
           </div>
-          <img class="concept__ourPhilosophy__philosophy__img--local" src="assets/noun-local-3266028 1.png" alt="logo location">
-          <div class="concept__ourPhilosophy__philosophy--wood">
-          <span>Favoriser le développement local</span> avec des matériaux de nos régions.
+          <img class="concept__ourPhilosophy__philosophy__img concept__ourPhilosophy__philosophy__img--right" src="assets/noun-local-3266028 1.png" alt="logo location">
+          <div class="concept__ourPhilosophy__philosophy__wood">
+          Favoriser le développement local avec des matériaux de nos régions.
           </div>
           
         </div>
@@ -86,7 +90,38 @@
     <!-- end concept -->
 
 <!-- start project -->
-    <section class="projects"></section>
+    <section class="projects" id="projects">
+      <h1>
+        NOS PROJETS    
+      </h1>
+      <blockquote class="concept__quote">
+         "On commence toujours un projet par la fin, quand on programme un GPS, on lui dit où l’on va, pas où l’on est."
+        <figcaption class="concept__quote__author">Alain Leblay</figcaption> 
+      </blockquote>
+      <div class="projects__section">
+          <div class="projects__section__card1" id="card1">
+            <h3>La Cabane </br> Octobre 2019</h3>
+            <p class="projects__section__card1__text--hidden"> La cabane vous permet de vivre au plus proche de la nature, dans un environnement minimaliste mais qui permet de se recentrer sur l'essentiel.</p>
+            <button id="button3" onclick="appear1()" class="projects__section__plus" >
+              <img src="assets/plus.png" alt="">   
+            </button>
+          </div>
+        <div class="projects__section__card2" id="card2">
+            <h3>La Mobihouse </br> Décembre 2020</h3>
+            <p class="projects__section__card2__text--hidden">La mobihouse est une création originale qui offre la fonctionnalité et le confort pour vivre au quotidien tout en étant au coeur de la nature.</p>
+            <button onclick="appear2()" id="button2" class="projects__section__plus">
+              <img src="assets/plus.png" alt="">
+            </button>
+        </div>
+        <div class="projects__section__card3" id="card3">
+            <h3>La bulle </br> Octobre 2021</h3>
+            <p class="projects__section__card3__text--hidden"> La bulle est un cocon de nature luxueux qui permet de ne faire qu'un avec la nature. Sa grande chance, la baie vitrée courbée et enveleoppante.</p>
+            <button onclick="appear3()" id="button3" class="projects__section__plus">
+              <img src="assets/plus.png" alt="">          
+            </button>
+        </div>
+      </div>
+    </section>
     
     <!-- Début de la page histoire -->
 
@@ -121,7 +156,7 @@
                   </div>
             </div>
         </div>
-    </section>
+      </section>
     <section class="contact" id="contact">
 <h1>ON SE RENCONTRE ?</h1>
 <p class="contact__text">Nous sommes là pour vous, pour vous raconter notre histoire et pour vous permettre d’écrire la vôtre. <br>
@@ -152,15 +187,15 @@ Mon message à l'équipe EGUR ETXEA</textarea>
       <section class="footer">
         <div class="footer__info">
           <img class="footer__info__logo" src="assets/Icon/location.png" alt="icone location">
-            <p>
+            <p class="footer__info__text">
               27 Rte de Pitoy 64600 Biarritz
             </p>
             <img class="footer__info__logo" src="assets/Icon/phone.png" alt="icone phone">
-            <p>
+            <p class="footer__info__text"> 
               +33635425690
             </p>
             <img class="footer__info__logo" src="assets/Icon/envelope.png" alt="icone envelope">
-            <p>              
+            <p class="footer__info__text">              
               contact@egur-etxea.com 
             </p>
         </div>

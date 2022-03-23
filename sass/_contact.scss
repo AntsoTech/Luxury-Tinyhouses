@@ -12,6 +12,10 @@
   &__container {
     display: flex;
     height: 74vh;
+
+    @media all and (max-width: 736px) {
+      justify-content: center;
+    }
     &__img {
       background-image: url("../assets/contact-img.svg");
       background-repeat: no-repeat;
@@ -22,6 +26,10 @@
       margin-left: 10%;
       align-self: flex-end;
       margin-bottom: 0.5vh;
+
+      @media all and (max-width: 736px) {
+        display: none;
+      }
     }
     &__form {
       width: 50vw;
@@ -32,6 +40,10 @@
       display: flex;
       text-align: center;
       margin-top: 7rem;
+      @media all and (max-width: 736px) {
+        padding-left: 0;
+      }
+
       &__input {
         height: 12vh;
         color: #909090;
@@ -70,6 +82,11 @@
         &:hover {
           background-color: #1ecd97;
           border-radius: 0.8rem;
+        }
+        @media all and (max-width: 736px) {
+          font-size: 1rem;
+          width: 15vw;
+          height: 7vh;
         }
       }
     }

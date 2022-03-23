@@ -1,0 +1,124 @@
+.projects {
+    background-color: $secondColor;
+    height: 100vh;
+    padding-top: 3vh;
+    padding-bottom: 33%;
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        &__plus {
+        background-color: transparent;  
+        border: 0;   
+        cursor: pointer;
+        }
+
+        &__card1 {
+            width: 49%;
+            height: 55vh;
+            background-image: url("../assets/tinyHouseProject1.jpg");
+            background-position: center;   
+            background-size: 700px;
+            align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @media all and (max-width: 736px) {
+                width: 95%;
+                height: 35vh;
+                margin-top: 1%;
+              }   
+
+            &__text--hidden {
+                display: none;
+            }  
+
+            &__text--visible {
+                display: flex;
+                padding: 5% 5% 5% 5%;                
+                width: 70%;
+                background-color: white;
+                opacity:90% ;
+                font-family: "Nunito-Light";
+                font-size: 1.1rem;
+                transition: opacity 2s;
+            }  
+        }
+
+        &__card2 {
+            width: 49%;
+            height: 55vh;
+            background-image: url("../assets/tinyHouseProject2.jpeg");
+            background-size: 700px;
+            background-position: center;   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            @media all and (max-width: 736px) {
+                width: 95%;
+                height: 35vh;
+                margin-top: 1%;
+            }  
+
+            &__text--hidden {
+                display: none;
+            }  
+
+            &__text--visible {
+                display: flex;
+                padding: 5% 5% 5% 5%;                
+                width: 70%;
+                background-color: white;
+                opacity:90% ;
+                font-family: "Nunito-Light";
+                font-size: 1.1rem;
+                transition: opacity 2s;
+            }  
+        }
+        
+
+        &__card3 {
+            margin-top: 1%;
+            width: 49%;
+            height: 55vh;
+            background-image: url("../assets/tinyHouseProject4.jpeg");
+            background-size: 700px;
+            background-position: center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @media all and (max-width: 736px) {
+                width: 95%;
+                height: 35vh;
+                margin-top: 1%;
+              } 
+              
+              &__text--hidden {
+                display: none;
+            }  
+
+            &__text--visible {
+                display: flex;
+                padding: 5% 5% 5% 5%;                
+                width: 70%;
+                background-color: white;
+                opacity:90% ;
+                font-family: "Nunito-Light";
+                font-size: 1.1rem;
+                transition: opacity 2s;
+            }  
+                      
+        } 
+        
+    }
+}
+
