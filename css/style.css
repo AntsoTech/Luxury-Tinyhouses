@@ -401,9 +401,9 @@ html {
   display: none;
   justify-content: space-between;
   margin-bottom: 0;
-  box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 64x 1px rgba(0, 0, 0, 0.75);
   width: 100vw; }
   .nav2__logo {
     background-image: url("../assets/logo_final_black.svg");
@@ -448,7 +448,7 @@ html {
   background-color: #fff;
   height: 100vh;
   padding-top: 3vh;
-  padding-bottom: 24%; }
+  padding-bottom: 33%; }
   .projects__section {
     display: flex;
     flex-wrap: wrap;
@@ -469,6 +469,20 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card1 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card1__text-hidden {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 0%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
     .projects__section__card2 {
       width: 49%;
       height: 55vh;
@@ -479,6 +493,20 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card2 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card2__text-hidden {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 0%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
     .projects__section__card3 {
       margin-top: 1%;
       width: 49%;
@@ -490,3 +518,25 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card3 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card3__text-hidden {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 0%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
+      .projects__section__card3__text-open {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 80%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out; }
