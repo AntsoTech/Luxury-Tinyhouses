@@ -359,6 +359,10 @@ html {
   background-color: #fff;
   height: 100vh;
   padding-bottom: 20%; }
+  @media all and (max-width: 736px) {
+    #history {
+      padding-bottom: 50%;
+      padding-top: 40%; } }
 
 .histoire {
   padding-top: 3vh; }
@@ -382,6 +386,10 @@ html {
       grid-template-rows: 1fr 2fr 2fr;
       grid-area: 1 / 4 / 3 / 2;
       height: 20vh; }
+      @media all and (max-width: 736px) {
+        .histoire__team__section {
+          display: flex;
+          flex-direction: column; } }
       .histoire__team__section__title {
         grid-area: 1 / 3 / 2 / 1;
         text-align: center;
@@ -398,6 +406,9 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center; }
+      @media all and (max-width: 736px) {
+        .histoire__nosValeurs__1 {
+          width: 50%; } }
     .histoire__nosValeurs__picture {
       background-image: url("../assets/img_histoire.jpeg");
       background-size: cover;
@@ -412,7 +423,7 @@ html {
         font-family: "Nunito-Light";
         margin-left: 3vw;
         margin-right: 3vw;
-        width: 50%; }
+        width: 100%; }
 
 .homePage {
   min-height: 100vh; }
