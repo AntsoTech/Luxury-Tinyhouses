@@ -20,6 +20,9 @@ h1 {
   background-position: center;
   background-position-y: 75%;
   margin-top: 0; }
+  @media all and (max-width: 736px) {
+    h1 {
+      background-size: 45vw; } }
 
 h3 {
   font-size: 2rem;
@@ -108,6 +111,9 @@ html {
   .contact__container {
     display: flex;
     height: 74vh; }
+    @media all and (max-width: 736px) {
+      .contact__container {
+        justify-content: center; } }
     .contact__container__img {
       background-image: url("../assets/contact-img.svg");
       background-repeat: no-repeat;
@@ -118,6 +124,9 @@ html {
       margin-left: 10%;
       align-self: flex-end;
       margin-bottom: 0.5vh; }
+      @media all and (max-width: 736px) {
+        .contact__container__img {
+          display: none; } }
     .contact__container__form {
       width: 50vw;
       flex-direction: column;
@@ -127,6 +136,9 @@ html {
       display: flex;
       text-align: center;
       margin-top: 7rem; }
+      @media all and (max-width: 736px) {
+        .contact__container__form {
+          padding-left: 0; } }
       .contact__container__form__input {
         height: 12vh;
         color: #909090;
@@ -160,6 +172,11 @@ html {
         .contact__container__form__button:hover {
           background-color: #1ecd97;
           border-radius: 0.8rem; }
+        @media all and (max-width: 736px) {
+          .contact__container__form__button {
+            font-size: 1rem;
+            width: 15vw;
+            height: 7vh; } }
 
 .footer {
   display: inline-flex;
