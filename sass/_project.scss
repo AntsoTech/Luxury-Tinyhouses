@@ -34,15 +34,19 @@
                 margin-top: 1%;
               }   
 
-              &__text-hidden {
-                padding: 5% 10% 5% 10%;                
+            &__text--hidden {
+                display: none;
+            }  
+
+            &__text--visible {
+                display: flex;
+                padding: 5% 5% 5% 5%;                
                 width: 70%;
                 background-color: white;
-                opacity:0% ;
+                opacity:90% ;
                 font-family: "Nunito-Light";
-                font-size: 1.3rem;
-                transition:all 0.8s ease-in-out;  
-                display: none;
+                font-size: 1.1rem;
+                transition: opacity 2s;
             }  
         }
 
@@ -61,18 +65,22 @@
                 width: 95%;
                 height: 35vh;
                 margin-top: 1%;
-              }  
+            }  
 
-              &__text-hidden {
-                padding: 5% 10% 5% 10%;                
+            &__text--hidden {
+                display: none;
+            }  
+
+            &__text--visible {
+                display: flex;
+                padding: 5% 5% 5% 5%;                
                 width: 70%;
                 background-color: white;
-                opacity:0% ;
+                opacity:90% ;
                 font-family: "Nunito-Light";
-                font-size: 1.3rem;
-                transition:all 0.8s ease-in-out;  
-                display: none;
-            }
+                font-size: 1.1rem;
+                transition: opacity 2s;
+            }  
         }
         
 
@@ -94,26 +102,20 @@
                 margin-top: 1%;
               } 
               
-            &__text-hidden {
-                padding: 5% 10% 5% 10%;                
+              &__text--hidden {
+                display: none;
+            }  
+
+            &__text--visible {
+                display: flex;
+                padding: 5% 5% 5% 5%;                
                 width: 70%;
                 background-color: white;
-                opacity:0% ;
+                opacity:90% ;
                 font-family: "Nunito-Light";
-                font-size: 1.3rem;
-                transition:all 0.8s ease-in-out;  
-                display: none;
-            }
-
-            &__text-open {
-                    padding: 5% 10% 5% 10%;                
-                    width: 70%;
-                    background-color: white;
-                    opacity:80% ;
-                    font-family: "Nunito-Light";
-                    font-size: 1.3rem ;
-                    transition: all 0.8s ease-in-out;
-            }
+                font-size: 1.1rem;
+                transition: opacity 2s;
+            }  
                       
         } 
         
