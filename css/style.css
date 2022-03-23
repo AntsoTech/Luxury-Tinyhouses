@@ -69,8 +69,10 @@ html {
     @media all and (max-width: 736px) {
       .concept__ourPhilosophy__philosophy {
         font-size: 1.8rem;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        margin: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: space-around; } }
     .concept__ourPhilosophy__philosophy__realisation {
       grid-row: 1/3;
@@ -81,9 +83,9 @@ html {
       padding-top: 25%; }
       @media all and (max-width: 736px) {
         .concept__ourPhilosophy__philosophy__realisation {
-          width: 80%;
-          height: 80px;
-          padding-top: 5%; } }
+          padding-top: 5%;
+          grid-row: 2/3;
+          background-size: 70%; } }
     .concept__ourPhilosophy__philosophy__respect {
       vertical-align: middle;
       background-image: url("../assets/vector1.png");
@@ -93,9 +95,8 @@ html {
       padding-top: 5%; }
       @media all and (max-width: 736px) {
         .concept__ourPhilosophy__philosophy__respect {
-          width: 80%;
-          height: 80px;
-          padding-top: 5%; } }
+          padding-top: 5%;
+          background-size: 60%; } }
     .concept__ourPhilosophy__philosophy__wood {
       background-image: url("../assets/vector3.png");
       background-size: 50%;
@@ -104,11 +105,9 @@ html {
       padding-top: 5%; }
       @media all and (max-width: 736px) {
         .concept__ourPhilosophy__philosophy__wood {
-          width: 80%;
-          height: 80px;
           padding-top: 5%;
-          display: flex;
-          justify-content: center; } }
+          justify-content: left;
+          background-size: 60%; } }
     .concept__ourPhilosophy__philosophy__img {
       height: 8vh;
       width: 8vh; }
@@ -116,11 +115,14 @@ html {
         .concept__ourPhilosophy__philosophy__img {
           height: 5vh;
           width: 5vh;
-          padding: 5% 5% 5% 5%; } }
+          padding: 5%; } }
       .concept__ourPhilosophy__philosophy__img--left {
         grid-column: 2/3;
         grid-row: 1/3;
         align-self: center; }
+        @media all and (max-width: 736px) {
+          .concept__ourPhilosophy__philosophy__img--left {
+            grid-row: 2/3; } }
       .concept__ourPhilosophy__philosophy__img--right {
         justify-self: right;
         padding-right: 4vw; }
@@ -222,7 +224,6 @@ html {
         display: flex;
         justify-content: space-between;
         padding: 0 5%; } }
-
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
@@ -261,7 +262,6 @@ html {
         display: flex;
         justify-content: space-between;
         padding: 0 5%; } }
-
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
