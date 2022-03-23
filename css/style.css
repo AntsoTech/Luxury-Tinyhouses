@@ -15,14 +15,23 @@ h1 {
   font-family: "Nunito-Regular";
   text-align: center;
   background-image: url("../assets/Rectangle_20.svg");
-  background-size: 30vw;
+  background-size: 20vw;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 75%;
   margin-top: 0; }
 
+h3 {
+  font-size: 2rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: white; }
+
 :root {
   font-size: 16px; }
+  @media all and (max-width: 736px) {
+    :root {
+      font-size: 10px; } }
 
 body {
   margin: 0;
@@ -39,7 +48,7 @@ html {
   font-family: "Nunito-Regular"; }
   .concept__quote {
     font-family: "Nunito-Regular";
-    font-size: 30px;
+    font-size: 1.6rem;
     text-align: center;
     font-style: oblique; }
     .concept__quote__author {
@@ -202,47 +211,56 @@ html {
     .footer__socialNetwork__image {
       padding: 0 40px 0 40px; }
 
-header {
+.nav1 {
   display: flex;
   align-items: center; }
-
-.homePage {
-  min-height: 100vh; }
-  .homePage__bgVideo {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1; }
-  .homePage__egurLogo {
-    background-image: url("../assets/logo_final.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20vw;
-    height: 20vh;
-    margin: 2rem 0 0 2rem; }
-  .homePage__navList {
+  .nav1__container {
+    display: none; }
+    @media all and (max-width: 736px) {
+      .nav1__container {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed right;
+        margin-left: 26vw;
+        margin-bottom: 10vh; }
+        .nav1__container__bar1, .nav1__container__bar2, .nav1__container__bar3 {
+          width: 35px;
+          height: 5px;
+          background-color: #333;
+          margin: 6px 0;
+          transition: 0.4s; } }
+  .nav1__navList {
     display: flex;
     justify-content: center;
     margin-left: 20rem; }
-    .homePage__navList__li {
+    .nav1__navList__li {
       list-style: none;
       color: #fff;
       margin: 0 3rem 0 2rem;
       display: flex;
       align-items: center; }
-      .homePage__navList__li__link {
+      .nav1__navList__li__link {
         font-family: "Nunito-Bold", sans-serif;
         font-size: 1.4rem;
         text-decoration: none;
         color: #fff;
         text-align: center; }
-        .homePage__navList__li__link:hover {
+        .nav1__navList__li__link:hover {
           text-decoration: underline; }
+      @media all and (max-width: 736px) {
+        .nav1__navList__li {
+          display: none; } }
+
+.changeBurger .nav1__container__bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.changeBurger .nav1__container__bar2 {
+  opacity: 0; }
+
+.changeBurger .nav1__container__bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
 
 #history {
   background-color: #fff;
@@ -279,37 +297,58 @@ header {
         font-size: 1.3rem;
         font-family: "Nunito-Light", sans-serif; }
 
-.baseline {
-  color: #fff;
-  font-family: "Nunito-Regular", sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  margin-left: 2vw; }
-
-.conceptScroll {
-  color: #fff;
-  font-family: "Nunito-Regular", sans-serif;
-  font-weight: bold;
-  font-size: 1.6rem;
-  text-align: center;
-  margin-top: 30vh; }
-
-.arrowContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 3vh;
-  height: 3vh;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite; }
-  .arrowContainer:hover {
-    animation-name: bounce;
-    -moz-animation-name: bounce; }
+.homePage {
+  min-height: 100vh; }
+  .homePage__bgVideo {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; }
+  .homePage__egurLogo {
+    background-image: url("../assets/logo_final.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vh;
+    margin: 2rem 0 0 2rem; }
+  .homePage__baseline {
+    color: #fff;
+    font-family: "Nunito-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: 2vw; }
+    @media all and (max-width: 736px) {
+      .homePage__baseline {
+        text-align: center;
+        margin-top: 20vh; } }
+  .homePage__conceptScroll {
+    color: #fff;
+    font-family: "Nunito-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30vh; }
+  .homePage__arrowContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    height: 3vh;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; }
+    .homePage__arrowContainer:hover {
+      animation-name: bounce;
+      -moz-animation-name: bounce; }
 
 @keyframes bounce {
   0% {
@@ -391,3 +430,50 @@ header {
           text-align: center; }
           .nav2__menu__list__item__title:hover {
             color: white; }
+
+.projects {
+  background-color: #fff;
+  height: 100vh;
+  padding-top: 3vh;
+  padding-bottom: 24%; }
+  .projects__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; }
+    .projects__section__plus {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer; }
+    .projects__section__card1 {
+      width: 49%;
+      height: 55vh;
+      background-image: url("../assets/tinyHouseProject1.jpg");
+      background-position: center;
+      background-size: 700px;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .projects__section__card2 {
+      width: 49%;
+      height: 55vh;
+      background-image: url("../assets/tinyHouseProject2.jpeg");
+      background-size: 700px;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .projects__section__card3 {
+      margin-top: 1%;
+      width: 49%;
+      height: 55vh;
+      background-image: url("../assets/tinyHouseProject4.jpeg");
+      background-size: 700px;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }

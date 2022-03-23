@@ -1,38 +1,68 @@
-.baseline {
-  color: #fff;
-  font-family: "Nunito-Regular", sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  margin-left: 2vw;
-}
+.homePage {
+  min-height: 100vh;
 
-.conceptScroll {
-  color: #fff;
-  font-family: "Nunito-Regular", sans-serif;
-  font-weight: bold;
-  font-size: 1.6rem;
-  text-align: center;
-  margin-top: 30vh;
-}
+  &__bgVideo {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 
-.arrowContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 3vh;
-  height: 3vh;
+  &__egurLogo {
+    background-image: url("../assets/logo_final.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vh;
+    margin: 2rem 0 0 2rem;
+  }
 
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  &__baseline {
+    color: #fff;
+    font-family: "Nunito-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: 2vw;
 
-  &:hover {
-    animation-name: bounce;
-    -moz-animation-name: bounce;
+    @media all and (max-width: 736px) {
+      text-align: center;
+      margin-top: 20vh;
+    }
+  }
+
+  &__conceptScroll {
+    color: #fff;
+    font-family: "Nunito-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30vh;
+  }
+
+  &__arrowContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    height: 3vh;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+    &:hover {
+      animation-name: bounce;
+      -moz-animation-name: bounce;
+    }
   }
 }
 
