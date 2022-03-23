@@ -21,12 +21,13 @@
             height: 55vh;
             background-image: url("../assets/tinyHouseProject1.jpg");
             background-position: center;   
-            background-size: 700px;
+            background-size: 750px;
             align-items: center;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            background-repeat: no-repeat;
 
             @media all and (max-width: 736px) {
                 width: 95%;
@@ -54,12 +55,13 @@
             width: 49%;
             height: 55vh;
             background-image: url("../assets/tinyHouseProject2.jpeg");
-            background-size: 700px;
+            background-size: 750px;
             background-position: center;   
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            background-repeat: no-repeat;
             
             @media all and (max-width: 736px) {
                 width: 95%;
@@ -89,13 +91,14 @@
             width: 49%;
             height: 55vh;
             background-image: url("../assets/tinyHouseProject4.jpeg");
-            background-size: 700px;
+            background-size: 750px;
             background-position: center; 
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
+            background-repeat: no-repeat;
+            
             @media all and (max-width: 736px) {
                 width: 95%;
                 height: 35vh;
