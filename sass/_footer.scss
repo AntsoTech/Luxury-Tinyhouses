@@ -4,9 +4,8 @@
     background-color: $footerColor;
     color: $secondColor;
     font-family: "Nunito-Bold";
-    @media all and (max-width: 736px){
-        background-size: 45sw;
-        }
+    
+        
 
     &__info{
         display: grid;
@@ -14,10 +13,28 @@
         align-items: center;
         width: 70%;
         border-right: $secondColor 0.2rem solid;
-        
+
+        @media all and (max-width: 736px){
+            display: flex;
+            justify-content: space-between;
+        }
+       
+
             &__logo{
                 justify-self: right;
                 justify-items: right;
+
+               
+            }
+                
+
+             
+                &__text{
+                    @media all and (max-width: 736px){
+                        display :none;
+                        
+                    }
+                
             }
     }
 
@@ -26,9 +43,14 @@
             justify-content: space-between;
             padding: 20px;
             width: 40%;
-    
+
+            @media all and (max-width: 736px){
+                justify-content: center;
+            }   
+
         &__image {
             padding: 0 40px 0 40px;
+                      
         }
     }
 }
