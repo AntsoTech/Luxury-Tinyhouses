@@ -14,13 +14,24 @@
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 3rem;
   font-family: "Nunito-Regular";
   text-align: center;
   background-image: url("../assets/Rectangle_20.svg");
-  background-size: 30vw;
+  background-size: 20vw;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 75%;
   margin-top: 0;
+
+  @media all and (max-width: 736px) {
+    background-size: 45vw;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: white;
 }

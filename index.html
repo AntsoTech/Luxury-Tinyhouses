@@ -7,69 +7,158 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="index.js" defer></script>
     <title>EGUR EXTEA</title>
   </head>
   <body>
-    <section class="homePage">
-      <video class="bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
-      <header>
-        <div class="egurLogo"></div>
-        <nav class="navHomePage">
-          <ul class="navHP">
-            <li><a href="#concept"> CONCEPT</a></li>
-            <li><a href="#projects"> NOS PROJETS </a></li>
-            <li><a href="#history"> NOTRE HISTOIRE </a></li>
-            <li><a href="#contact"> CONTACT </a></li>
+    <section class="homePage" id="homePage">
+      <video class="homePage__bgVideo" autoplay loop muted><source src="./assets/homePageVideo.mp4" /></video>
+       <!-- Nav barre de la page d'accueil -->
+      <header id="nav1" class="nav1">
+        <div class="homePage__egurLogo"></div>
+       
+          <ul class="nav1__navList">
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#concept"> CONCEPT</a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#projects"> NOS PROJETS </a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#history"> NOTRE HISTOIRE </a></li>
+            <li class="nav1__navList__li"><a class="nav1__navList__li__link" href="#contact"> CONTACT </a></li>
           </ul>
-        </nav>
+
+          <!-- Div container pour la création du hamburger button -->
+          <div class="nav1__container" onclick="myFunction(this)">
+            <div class="nav1__container__bar1"></div>
+            <div class="nav1__container__bar2"></div>
+            <div class="nav1__container__bar3"></div>
+          </div>
+          
       </header>
-      <h2 class="baseline">
+             <!-- Nav barre fixe apparait au scroll -->
+             <div class="nav2" id="nav2">
+              <div class="nav2__logo"></div>
+                <div class="nav2__menu">
+                  <ul class="nav2__menu__list">
+                    <li class="nav2__menu__list__item"><a class="nav2__menu__list__item__title" href="#concept"> CONCEPT</a></li>
+                    <li class="nav2__menu__list__item"><a class="nav2__menu__list__item__title" href="#projects"> NOS PROJETS </a></li>
+                    <li class="nav2__menu__list__item"><a class="nav2__menu__list__item__title" href="#history"> NOTRE HISTOIRE </a></li>
+                    <li class="nav2__menu__list__item"><a class="nav2__menu__list__item__title" href="#contact"> CONTACT </a></li>
+                  </ul>
+                </div>
+            </div>
+      <h2 class="homePage__baseline">
         Créateur d’expériences <br />
         de vies mémorables
       </h2>
-      <div class="conceptScroll">
+      <div class="homePage__conceptScroll">
         DÉCOUVRIR <br />
         NOTRE CONCEPT
       </div>
-      <div class="arrowContainer">
+      <div class="homePage__arrowContainer">
         <a href="#concept">
           <img src="./assets/arrow-down-circle.svg" alt="Découvrir le concept" width="50vw" />
         </a>
       </div>
     </section>
+<!-- start concept -->
+    <section id="concept" class="concept">
+      <h1>
+        NOTRE CONCEPT
+      </h1>
+      <blockquote class="concept__quote">
+         "Si vous ne pouvez expliquer un concept à un enfant de six ans, c'est que vous ne le comprenez pas complètement."
+        <figcaption class="concept__quote__author">Albert Einstein</figcaption> 
+      </blockquote>
+      <div class="concept__ourPhilosophy">
 
-    <section class="concept"></section>
-    <section class="projects"></section>
-    <!-- Début de la section histoire -->
-    <section id="histoire">
-        <h1>NOTRE HISTOIRE</h1>
-        <p class="histoireText">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
-            Nous sommes 4, et avec vous et vos projets, nous sommes des millions. Nous voulons vous aider à créer un endroit spirituel, animé et qui vous ressemble. </p>
-            <div class="teamContainer">
-                <div id="teamPicture">
-                </div>
-                <div class="teamSection">
-                    <h3 class="teamTitle">Notre équipe</h3>    
-                    <div class="teamCard">
-                        <h4>Antso Rakotoson <br>
-                        Ingénieur Structure
-                        </h4>
-                    </div>
-                    <div class="teamCard">
-                        <h4>Astrid Froitier  <br>
-                        Ingénieur Éco-conception</h4>
-                    </div>
-                    <div class="teamCard">
-                        <h4>Quentin Guérandel<br>
-                        Designer & Ébéniste</h4>
-                    </div>
-                    <div class="teamCard">
-                        <h4>Johnny Hiriart<br>
-                        Ingénieur Matériaux Bois</h4>
-                    </div>
-                </div>
-            </div>
+        <img class="concept__ourPhilosophy__vector2" src="assets/vector2.png" alt="realisation background">
+        <img class="concept__ourPhilosophy__vector1" src="assets/vector1.png" alt="respect background">
+        <img class="concept__ourPhilosophy__vector3" src="assets/vector3.png" alt="wood background">
+
+        <div class="concept__ourPhilosophy__philosophy">
+
+          <img class="concept__ourPhilosophy__philosophy__img--leaf" src="assets/noun-leaf-69542 1.png" alt="logo eco">
+          <div class="concept__ourPhilosophy__philosophy__realisation">
+          <span>Tiny-Houses éco-conçues</span> respectant la faune et la flore.
+          </div>          
+          <img class="concept__ourPhilosophy__philosophy__img--customize" src="assets/noun-customize-196321 1.png" alt="logo client">
+          <div class="concept__ourPhilosophy__philosophy__respect">
+          Travailler des concepts uniques, <span>des réalisations sur-mesure.</span> 
+          </div>
+          <img class="concept__ourPhilosophy__philosophy__img--local" src="assets/noun-local-3266028 1.png" alt="logo location">
+          <div class="concept__ourPhilosophy__philosophy--wood">
+          <span>Favoriser le développement local</span> avec des matériaux de nos régions.
+          </div>
+          
+        </div>
+      </div>
     </section>
+    <!-- end concept -->
+
+<!-- start project -->
+    <section class="projects" id="projects">
+      <h1>
+        NOS PROJETS    
+      </h1>
+      <blockquote class="concept__quote">
+         "On commence toujours un projet par la fin, quand on programme un GPS, on lui dit où l’on va, pas où l’on est."
+        <figcaption class="concept__quote__author">Alain Leblay</figcaption> 
+      </blockquote>
+      <div class="projects__section">
+        <div class="projects__section__card1" onclick="unveilparagraph" id="card1">
+          <h3>La Cabane </br> Octobre 2019</h3>
+          <button id="button3" class="projects__section__plus" >
+            <img src="assets/plus.png" alt="">
+            
+          </button>
+        </div>
+        <div class="projects__section__card2" id="card2">
+          <h3>La Mobihouse </br> Décembre 2020</h3>
+          <button id="button2" class="projects__section__plus" >
+          <img src="assets/plus.png" alt="">
+          </button>
+        </div>
+        <div class="projects__section__card3" id="card3">
+          <h3>La bulle </br> Octobre 2021</h3>
+          <button id="button3" class="projects__section__plus" >
+          <img src="assets/plus.png" alt="">          
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Début de la page histoire -->
+
+    <section class="history" id="history">
+         <!-- Section histoire -->
+        <div id="histoire" class="histoire">
+          <h1>NOTRE HISTOIRE</h1>
+          <p class="histoire__text">Nous aimons les petites choses, les petits coins sympas, les endroits cosy, le minimalisme et la chaleur du bois.
+            Nous sommes 4, et avec vous et vos projets, nous sommes des millions. Nous voulons vous aider à créer un endroit spirituel, animé et qui vous ressemble. </p>
+          <div class="histoire__team">
+                <div class="histoire__team__picture">
+                </div>
+                  <div class="histoire__team__section">
+                      <h3 class="histoire__team__section__title">Notre équipe</h3>    
+                      <div class="histoire__team__section__card">
+                          <h4>Antso Rakotoson <br>
+                          Ingénieur Structure
+                          </h4>
+                      </div>
+                      <div class="histoire__team__section__card">
+                          <h4>Astrid Froitier  <br>
+                          Ingénieur Éco-conception</h4>
+                      </div>
+                      <div class="histoire__team__section__card">
+                          <h4>Quentin Guérandel<br>
+                          Designer & Ébéniste</h4>
+                      </div>
+                      <div class="histoire__team__section__card">
+                          <h4>Johnny Hiriart<br>
+                          Ingénieur Matériaux Bois</h4>
+                      </div>
+                  </div>
+            </div>
+        </div>
+      </section>
     <section class="contact" id="contact">
 <h1>ON SE RENCONTRE ?</h1>
 <p class="contact__text">Nous sommes là pour vous, pour vous raconter notre histoire et pour vous permettre d’écrire la vôtre. <br>
@@ -97,25 +186,27 @@ Mon message à l'équipe EGUR ETXEA</textarea>
 
 
     <footer>
-        <div class="info">
+      <section class="footer">
+        <div class="footer__info">
+          <img class="footer__info__logo" src="assets/Icon/location.png" alt="icone location">
             <p>
-                <img src="assets/Icon/location.png" alt="icone location">
-                27 Rte de Pitoy </br> 64600 Biarritz
+              27 Rte de Pitoy 64600 Biarritz
             </p>
+            <img class="footer__info__logo" src="assets/Icon/phone.png" alt="icone phone">
             <p>
-                <img src="assets/Icon/phone.png" alt="icone phone">
-                +33635425690
+              +33635425690
             </p>
-            <p class=>
-                <img src="assets/Icon/envelope.png" alt="icone envelope">
-                contact@egur-etxea.com 
+            <img class="footer__info__logo" src="assets/Icon/envelope.png" alt="icone envelope">
+            <p>              
+              contact@egur-etxea.com 
             </p>
         </div>
-        <div class="socialNetwork">
-            <img src="assets/Icon/twitter.png" alt="twitter">
-            <img src="assets/Icon/facebook.png" alt="facebook">
-            <img src="assets/Icon/youtube.png" alt="youtube">
+        <div class="footer__socialNetwork">
+            <img class="footer__socialNetwork__image" src="assets/Icon/twitter.png" alt="twitter">
+            <img class="footer__socialNetwork__image" src="assets/Icon/facebook.png" alt="facebook">
+            <img class="footer__socialNetwork__image" src="assets/Icon/youtube.png" alt="youtube">
         </div>
+      </section>
     </footer>
   </body>
 </html>

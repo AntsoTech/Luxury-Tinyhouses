@@ -1,39 +1,68 @@
-.homePage {
-  min-height: 100vh;
-}
-header {
+.nav1 {
   display: flex;
   align-items: center;
-}
-.egurLogo {
-  background-image: url("../assets/logo_final.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20vw;
-  height: 20vh;
-  margin: 2vh 0 0 2vw;
-}
-ul {
-  display: flex;
-  justify-content: center;
+
+  //Container qui apparait uniquement sur la media query
+  &__container {
+    display: none;
+    @media all and (max-width: 736px) {
+      display: inline-block;
+      cursor: pointer;
+      position: fixed right;
+      margin-left: 26vw;
+      margin-bottom: 10vh;
+
+      &__bar1,
+      &__bar2,
+      &__bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  &__navList {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem;
+
+    &__li {
+      list-style: none;
+      color: #fff;
+      margin: 0 3rem 0 2rem;
+      display: flex;
+      align-items: center;
+      &__link {
+        font-family: "Nunito-Bold", sans-serif;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      @media all and (max-width: 736px) {
+        display: none;
+      }
+    }
+  }
 }
 
-li {
-  list-style: none;
-  color: #fff;
-  margin: 0 3rem 0 2rem;
-
-  display: flex;
-  align-items: center;
+//Changement de classe au toggle (cf. index.js) pour les 3 barres
+.changeBurger .nav1__container__bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-a {
-  font-family: "Nunito-Bold", sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
+.changeBurger .nav1__container__bar2 {
+  opacity: 0;
 }
-.navHomePage {
-  margin-left: 20vw;
+
+.changeBurger .nav1__container__bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }

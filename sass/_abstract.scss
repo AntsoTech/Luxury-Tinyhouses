@@ -1,3 +1,10 @@
+:root {
+  font-size: 16px;
+  @media all and (max-width: 736px) {
+    font-size: 10px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
