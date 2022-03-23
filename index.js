@@ -22,23 +22,16 @@ function myFunction(element) {
   document.getElementsByClassName("nav1__container__bar")[2].classList.toggle("nav1__container__bar--white");
 }
 
-// Projects section - buttons
-// const card1 = document.getElementById("card1");
-// const card2 = document.getElementById("card2");
-// const card3 = document.getElementById("card3");
-
-// création d'une fonction "toggle" qui permet de faire apparaitre le paragraphe de la "card"
-function appear2() {
-  const cardText3 = document.getElementById("projects1");
-  cardText3.classList.toggle("projects__section__card1__text-open");
-}
+// création des fonctions "toggle" qui permet de faire apparaitre le paragraphe de la "card"
+function appear1() {
+document.querySelector(".projects__section__card1__text--hidden").classList.toggle("projects__section__card1__text--visible");
+} ;
 
 function appear2() {
-  const cardText3 = document.getElementById("projects2");
-  cardText3.classList.toggle("projects__section__card2__text-open");
-}
+  document.querySelector(".projects__section__card2__text--hidden").classList.toggle("projects__section__card2__text--visible");
+
+} ;
 
 function appear3() {
-  const cardText3 = document.getElementById("projects3");
-  cardText3.classList.toggle("projects__section__card3__text-open");
-}
+  document.querySelector(".projects__section__card3__text--hidden").classList.toggle("projects__section__card3__text--visible");
+} ;

@@ -25,10 +25,11 @@ h1 {
       background-size: 45vw; } }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Nunito-Regular";
   text-align: center;
-  color: white; }
+  color: white;
+  margin: 0; }
 
 :root {
   font-size: 16px; }
@@ -512,15 +513,17 @@ html {
           width: 95%;
           height: 35vh;
           margin-top: 1%; } }
-      .projects__section__card1__text-hidden {
-        padding: 5% 10% 5% 10%;
+      .projects__section__card1__text--hidden {
+        display: none; }
+      .projects__section__card1__text--visible {
+        display: flex;
+        padding: 5% 5% 5% 5%;
         width: 70%;
         background-color: white;
-        opacity: 0%;
+        opacity: 90%;
         font-family: "Nunito-Light";
-        font-size: 1.3rem;
-        transition: all 0.8s ease-in-out;
-        display: none; }
+        font-size: 1.1rem;
+        transition: opacity 2s; }
     .projects__section__card2 {
       width: 49%;
       height: 55vh;
@@ -536,15 +539,17 @@ html {
           width: 95%;
           height: 35vh;
           margin-top: 1%; } }
-      .projects__section__card2__text-hidden {
-        padding: 5% 10% 5% 10%;
+      .projects__section__card2__text--hidden {
+        display: none; }
+      .projects__section__card2__text--visible {
+        display: flex;
+        padding: 5% 5% 5% 5%;
         width: 70%;
         background-color: white;
-        opacity: 0%;
+        opacity: 90%;
         font-family: "Nunito-Light";
-        font-size: 1.3rem;
-        transition: all 0.8s ease-in-out;
-        display: none; }
+        font-size: 1.1rem;
+        transition: opacity 2s; }
     .projects__section__card3 {
       margin-top: 1%;
       width: 49%;
@@ -561,20 +566,14 @@ html {
           width: 95%;
           height: 35vh;
           margin-top: 1%; } }
-      .projects__section__card3__text-hidden {
-        padding: 5% 10% 5% 10%;
-        width: 70%;
-        background-color: white;
-        opacity: 0%;
-        font-family: "Nunito-Light";
-        font-size: 1.3rem;
-        transition: all 0.8s ease-in-out;
+      .projects__section__card3__text--hidden {
         display: none; }
-      .projects__section__card3__text-open {
-        padding: 5% 10% 5% 10%;
+      .projects__section__card3__text--visible {
+        display: flex;
+        padding: 5% 5% 5% 5%;
         width: 70%;
         background-color: white;
-        opacity: 80%;
+        opacity: 90%;
         font-family: "Nunito-Light";
-        font-size: 1.3rem;
-        transition: all 0.8s ease-in-out; }
+        font-size: 1.1rem;
+        transition: opacity 2s; }
