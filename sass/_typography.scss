@@ -23,6 +23,10 @@ h1 {
   background-position: center;
   background-position-y: 75%;
   margin-top: 0;
+
+  @media all and (max-width: 736px) {
+    background-size: 45vw;
+  }
 }
 
 h3 {

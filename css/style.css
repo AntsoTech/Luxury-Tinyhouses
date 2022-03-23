@@ -20,6 +20,9 @@ h1 {
   background-position: center;
   background-position-y: 75%;
   margin-top: 0; }
+  @media all and (max-width: 736px) {
+    h1 {
+      background-size: 45vw; } }
 
 h3 {
   font-size: 2rem;
@@ -42,7 +45,6 @@ html {
   scroll-behavior: smooth; }
 
 .concept {
-  height: 100vh;
   background-color: #fff;
   padding-top: 10vh;
   font-family: "Nunito-Regular"; }
@@ -55,53 +57,51 @@ html {
       font-style: normal; }
     @media all and (max-width: 736px) {
       .concept__quote {
-        font-size: 1.6rem; } }
-  .concept__ourPhilosophy__vector2 {
-    position: absolute;
-    top: 155vh; }
-  .concept__ourPhilosophy__vector1 {
-    position: absolute;
-    right: 0;
-    top: 135vh; }
-  .concept__ourPhilosophy__vector3 {
-    position: absolute;
-    right: 0;
-    top: 165vh; }
+        font-size: 1.2rem; } }
   .concept__ourPhilosophy__philosophy {
     display: grid;
     margin: 0 20px;
     text-align: center;
-    font-family: "Nunito-Regular";
-    font-size: 30px;
+    font-size: 1.5rem;
     grid-template-columns: 35% 15% 15% 35%;
-    grid-template-rows: 15vw 15vw; }
+    grid-template-rows: 10vw 10vw; }
+    @media all and (max-width: 736px) {
+      .concept__ourPhilosophy__philosophy {
+        font-size: 1.4rem; } }
     .concept__ourPhilosophy__philosophy__realisation {
-      align-self: center;
-      grid-row: 1/3; }
-      .concept__ourPhilosophy__philosophy__realisation__span {
-        font-weight: 400; }
+      grid-row: 1/3;
+      background-image: url("../assets/vector2.png");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-top: 25%; }
     .concept__ourPhilosophy__philosophy__respect {
-      align-self: center; }
+      vertical-align: middle;
+      background-image: url("../assets/vector1.png");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center right;
+      padding-top: 5%; }
     .concept__ourPhilosophy__philosophy__wood {
-      align-self: center; }
-    .concept__ourPhilosophy__philosophy__img--leaf {
-      align-self: center;
-      height: 10vh;
-      width: 10vh;
-      grid-column: 2/3;
-      grid-row: 1/3; }
-    .concept__ourPhilosophy__philosophy__img--customize {
-      align-self: center;
-      height: 10vh;
-      width: 10vh;
-      justify-self: right;
-      padding-right: 4vh; }
-    .concept__ourPhilosophy__philosophy__img--local {
-      align-self: center;
-      height: 10vh;
-      width: 10vh;
-      justify-self: right;
-      padding-right: 4vh; }
+      background-image: url("../assets/vector3.png");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center right;
+      padding-top: 5%; }
+    .concept__ourPhilosophy__philosophy__img {
+      height: 8vh;
+      width: 8vh; }
+      @media all and (max-width: 736px) {
+        .concept__ourPhilosophy__philosophy__img {
+          height: 5vh;
+          width: 5vh; } }
+      .concept__ourPhilosophy__philosophy__img--left {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        align-self: center; }
+      .concept__ourPhilosophy__philosophy__img--right {
+        justify-self: right;
+        padding-right: 4vw; }
 
 .contact {
   background-color: #fff;
@@ -115,6 +115,9 @@ html {
   .contact__container {
     display: flex;
     height: 74vh; }
+    @media all and (max-width: 736px) {
+      .contact__container {
+        justify-content: center; } }
     .contact__container__img {
       background-image: url("../assets/contact-img.svg");
       background-repeat: no-repeat;
@@ -125,6 +128,9 @@ html {
       margin-left: 10%;
       align-self: flex-end;
       margin-bottom: 0.5vh; }
+      @media all and (max-width: 736px) {
+        .contact__container__img {
+          display: none; } }
     .contact__container__form {
       width: 50vw;
       flex-direction: column;
@@ -134,6 +140,9 @@ html {
       display: flex;
       text-align: center;
       margin-top: 7rem; }
+      @media all and (max-width: 736px) {
+        .contact__container__form {
+          padding-left: 0; } }
       .contact__container__form__input {
         height: 12vh;
         color: #909090;
@@ -167,6 +176,11 @@ html {
         .contact__container__form__button:hover {
           background-color: #1ecd97;
           border-radius: 0.8rem; }
+        @media all and (max-width: 736px) {
+          .contact__container__form__button {
+            font-size: 1rem;
+            width: 15vw;
+            height: 7vh; } }
 
 .footer {
   display: inline-flex;
@@ -391,9 +405,9 @@ html {
   display: none;
   justify-content: space-between;
   margin-bottom: 0;
-  box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 64x 1px rgba(0, 0, 0, 0.75);
   width: 100vw; }
   .nav2__logo {
     background-image: url("../assets/logo_final_black.svg");
@@ -438,7 +452,7 @@ html {
   background-color: #fff;
   height: 100vh;
   padding-top: 3vh;
-  padding-bottom: 24%; }
+  padding-bottom: 33%; }
   .projects__section {
     display: flex;
     flex-wrap: wrap;
@@ -459,6 +473,20 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card1 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card1__text-hidden {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 0%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
     .projects__section__card2 {
       width: 49%;
       height: 55vh;
@@ -469,6 +497,20 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card2 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card2__text-hidden {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 0%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
     .projects__section__card3 {
       margin-top: 1%;
       width: 49%;
@@ -480,3 +522,25 @@ html {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media all and (max-width: 736px) {
+        .projects__section__card3 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card3__text-hidden {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 0%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
+      .projects__section__card3__text-open {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 80%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out; }
