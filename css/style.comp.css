@@ -25,11 +25,10 @@ h1 {
       background-size: 45vw; } }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Nunito-Regular";
   text-align: center;
-  color: white;
-  margin: 0; }
+  color: white; }
 
 :root {
   font-size: 16px; }
@@ -191,24 +190,14 @@ html {
     align-items: center;
     width: 70%;
     border-right: #fff 0.2rem solid; }
-    @media all and (max-width: 736px) {
-      .footer__info {
-        display: flex;
-        justify-content: space-between; } }
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
-    @media all and (max-width: 736px) {
-      .footer__info__text {
-        display: none; } }
   .footer__socialNetwork {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     width: 40%; }
-    @media all and (max-width: 736px) {
-      .footer__socialNetwork {
-        justify-content: center; } }
     .footer__socialNetwork__image {
       padding: 0 40px 0 40px; }
 
@@ -224,24 +213,14 @@ html {
     align-items: center;
     width: 70%;
     border-right: #fff 0.2rem solid; }
-    @media all and (max-width: 736px) {
-      .footer__info {
-        display: flex;
-        justify-content: space-between; } }
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
-    @media all and (max-width: 736px) {
-      .footer__info__text {
-        display: none; } }
   .footer__socialNetwork {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     width: 40%; }
-    @media all and (max-width: 736px) {
-      .footer__socialNetwork {
-        justify-content: center; } }
     .footer__socialNetwork__image {
       padding: 0 40px 0 40px; }
 
@@ -260,14 +239,12 @@ html {
         margin-left: 26vw;
         margin-bottom: 10vh;
         z-index: 10; }
-        .nav1__container__bar {
+        .nav1__container__bar1, .nav1__container__bar2, .nav1__container__bar3 {
           width: 35px;
           height: 5px;
           background-color: #333;
           margin: 6px 0;
-          transition: 0.4s; }
-          .nav1__container__bar--white {
-            background-color: #fff; } }
+          transition: 0.4s; } }
   .nav1__navList {
     display: flex;
     justify-content: center;
@@ -308,10 +285,12 @@ html {
             font-size: 2rem;
             padding-top: 5vh; } }
   .nav1 .changeBurger .nav1__container__bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px); }
   .nav1 .changeBurger .nav1__container__bar2 {
     opacity: 0; }
   .nav1 .changeBurger .nav1__container__bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px); }
 
 #history {
@@ -513,17 +492,15 @@ html {
           width: 95%;
           height: 35vh;
           margin-top: 1%; } }
-      .projects__section__card1__text--hidden {
-        display: none; }
-      .projects__section__card1__text--visible {
-        display: flex;
-        padding: 5% 5% 5% 5%;
+      .projects__section__card1__text-hidden {
+        padding: 5% 10% 5% 10%;
         width: 70%;
         background-color: white;
-        opacity: 90%;
+        opacity: 0%;
         font-family: "Nunito-Light";
-        font-size: 1.1rem;
-        transition: opacity 2s; }
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
     .projects__section__card2 {
       width: 49%;
       height: 55vh;
@@ -539,17 +516,15 @@ html {
           width: 95%;
           height: 35vh;
           margin-top: 1%; } }
-      .projects__section__card2__text--hidden {
-        display: none; }
-      .projects__section__card2__text--visible {
-        display: flex;
-        padding: 5% 5% 5% 5%;
+      .projects__section__card2__text-hidden {
+        padding: 5% 10% 5% 10%;
         width: 70%;
         background-color: white;
-        opacity: 90%;
+        opacity: 0%;
         font-family: "Nunito-Light";
-        font-size: 1.1rem;
-        transition: opacity 2s; }
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
     .projects__section__card3 {
       margin-top: 1%;
       width: 49%;
@@ -566,14 +541,20 @@ html {
           width: 95%;
           height: 35vh;
           margin-top: 1%; } }
-      .projects__section__card3__text--hidden {
-        display: none; }
-      .projects__section__card3__text--visible {
-        display: flex;
-        padding: 5% 5% 5% 5%;
+      .projects__section__card3__text-hidden {
+        padding: 5% 10% 5% 10%;
         width: 70%;
         background-color: white;
-        opacity: 90%;
+        opacity: 0%;
         font-family: "Nunito-Light";
-        font-size: 1.1rem;
-        transition: opacity 2s; }
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out;
+        display: none; }
+      .projects__section__card3__text-open {
+        padding: 5% 10% 5% 10%;
+        width: 70%;
+        background-color: white;
+        opacity: 80%;
+        font-family: "Nunito-Light";
+        font-size: 1.3rem;
+        transition: all 0.8s ease-in-out; }
