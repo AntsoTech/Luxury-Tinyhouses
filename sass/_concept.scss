@@ -13,6 +13,9 @@
         &__author{
             font-style: normal;
         }
+        @media all and (max-width: 736px){
+            font-size: 1.6rem;
+        }
     }
 
     &__ourPhilosophy{
@@ -41,6 +44,8 @@
             font-size: 30px;
             grid-template-columns: 35% 15% 15% 35%;
             grid-template-rows: 15vw 15vw;
+
+            
 
             &__realisation{
                 align-self: center;

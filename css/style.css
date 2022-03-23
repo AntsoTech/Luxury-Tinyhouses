@@ -53,6 +53,9 @@ html {
     font-style: oblique; }
     .concept__quote__author {
       font-style: normal; }
+    @media all and (max-width: 736px) {
+      .concept__quote {
+        font-size: 1.6rem; } }
   .concept__ourPhilosophy__vector2 {
     position: absolute;
     top: 155vh; }
