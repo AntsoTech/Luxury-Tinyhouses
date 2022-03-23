@@ -6,8 +6,6 @@
     color: $secondColor;
     font-family: "Nunito-Bold";
     
-        
-
     &__info{
         display: grid;
         grid-template-columns: 10% 20% 10% 20% 10% 25%;
@@ -18,24 +16,21 @@
         @media all and (max-width: 736px){
             display: flex;
             justify-content: space-between;
+            padding: 0 5%;
         }
-       
 
             &__logo{
                 justify-self: right;
                 justify-items: right;
-
-               
             }
-                
+            
+            &__text{
+                text-decoration: none;
+                color: $secondColor;
 
-             
-                &__text{
-                    @media all and (max-width: 736px){
-                        display :none;
-                        
-                    }
-                
+                @media all and (max-width: 736px){
+                    display :none;
+                }
             }
     }
 
@@ -46,12 +41,11 @@
             width: 40%;
 
             @media all and (max-width: 736px){
-                justify-content: center;
+                justify-content: space-between;
             }   
 
-        &__image {
-            padding: 0 40px 0 40px;
-                      
+        &__image{
+            padding: 0 40px;           
         }
     }
 }
