@@ -184,6 +184,9 @@ html {
   background-color: #c4c4C4;
   color: #fff;
   font-family: "Nunito-Bold"; }
+  @media all and (max-width: 736px) {
+    .footer {
+      background-size: 45sw; } }
   .footer__info {
     display: grid;
     grid-template-columns: 10% 20% 10% 20% 10% 25%;
@@ -207,6 +210,9 @@ html {
   background-color: #c4c4C4;
   color: #fff;
   font-family: "Nunito-Bold"; }
+  @media all and (max-width: 736px) {
+    .footer {
+      background-size: 45sw; } }
   .footer__info {
     display: grid;
     grid-template-columns: 10% 20% 10% 20% 10% 25%;

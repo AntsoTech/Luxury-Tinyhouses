@@ -4,6 +4,9 @@
     background-color: $footerColor;
     color: $secondColor;
     font-family: "Nunito-Bold";
+    @media all and (max-width: 736px){
+        background-size: 45sw;
+        }
 
     &__info{
         display: grid;
