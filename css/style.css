@@ -211,9 +211,9 @@ html {
             height: 7vh; } }
 
 .footer {
-  display: inline-flex;
+  display: flex;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #c4c4C4;
   color: #fff;
   font-family: "Nunito-Bold"; }
@@ -221,14 +221,13 @@ html {
     display: grid;
     grid-template-columns: 10% 20% 10% 20% 10% 25%;
     align-items: center;
-    width: 70%;
+    width: 50%;
     border-right: #fff 0.2rem solid; }
     @media all and (max-width: 736px) {
       .footer__info {
         display: flex;
         justify-content: space-between;
         padding: 0 5%; } }
-
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
@@ -240,19 +239,19 @@ html {
           display: none; } }
   .footer__socialNetwork {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    width: 40%; }
+    width: 50%; }
     @media all and (max-width: 736px) {
       .footer__socialNetwork {
-        justify-content: space-between; } }
-    .footer__socialNetwork__image {
-      padding: 0 40px; }
+        justify-content: space-between;
+        padding: 40px;
+        gap: 25px; } }
 
 .footer {
-  display: inline-flex;
+  display: flex;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #c4c4C4;
   color: #fff;
   font-family: "Nunito-Bold"; }
@@ -260,14 +259,13 @@ html {
     display: grid;
     grid-template-columns: 10% 20% 10% 20% 10% 25%;
     align-items: center;
-    width: 70%;
+    width: 50%;
     border-right: #fff 0.2rem solid; }
     @media all and (max-width: 736px) {
       .footer__info {
         display: flex;
         justify-content: space-between;
         padding: 0 5%; } }
-
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
@@ -279,14 +277,14 @@ html {
           display: none; } }
   .footer__socialNetwork {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    width: 40%; }
+    width: 50%; }
     @media all and (max-width: 736px) {
       .footer__socialNetwork {
-        justify-content: space-between; } }
-    .footer__socialNetwork__image {
-      padding: 0 40px; }
+        justify-content: space-between;
+        padding: 40px;
+        gap: 25px; } }
 
 .nav1 {
   display: flex;
