@@ -19,10 +19,13 @@ function myFunction(element) {
   element.classList.toggle("changeBurger");
 };
 
+
 // Projects section - buttons 
 // const card1 = document.getElementById("card1");
 // const card2 = document.getElementById("card2");
 // const card3 = document.getElementById("card3");
+
+
 
 // création d'une fonction "toggle" qui permet de faire apparaitre le paragraphe de la "card"
 function appear2() {
