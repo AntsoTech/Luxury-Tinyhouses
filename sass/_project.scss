@@ -2,7 +2,7 @@
     background-color: $secondColor;
     height: 100vh;
     padding-top: 3vh;
-    padding-bottom: 30%;
+    padding-bottom: 33%;
 
     &__section {
         display: flex;
@@ -32,9 +32,18 @@
                 width: 95%;
                 height: 35vh;
                 margin-top: 1%;
-              }    
+              }   
 
-
+              &__text-hidden {
+                padding: 5% 10% 5% 10%;                
+                width: 70%;
+                background-color: white;
+                opacity:0% ;
+                font-family: "Nunito-Light";
+                font-size: 1.3rem;
+                transition:all 0.8s ease-in-out;  
+                display: none;
+            }  
         }
 
         &__card2 {
@@ -53,6 +62,17 @@
                 height: 35vh;
                 margin-top: 1%;
               }  
+
+              &__text-hidden {
+                padding: 5% 10% 5% 10%;                
+                width: 70%;
+                background-color: white;
+                opacity:0% ;
+                font-family: "Nunito-Light";
+                font-size: 1.3rem;
+                transition:all 0.8s ease-in-out;  
+                display: none;
+            }
         }
         
 
@@ -72,7 +92,29 @@
                 width: 95%;
                 height: 35vh;
                 margin-top: 1%;
-              }  
+              } 
+              
+            &__text-hidden {
+                padding: 5% 10% 5% 10%;                
+                width: 70%;
+                background-color: white;
+                opacity:0% ;
+                font-family: "Nunito-Light";
+                font-size: 1.3rem;
+                transition:all 0.8s ease-in-out;  
+                display: none;
+            }
+
+            &__text-open {
+                    padding: 5% 10% 5% 10%;                
+                    width: 70%;
+                    background-color: white;
+                    opacity:80% ;
+                    font-family: "Nunito-Light";
+                    font-size: 1.3rem ;
+                    transition: all 0.8s ease-in-out;
+            }
+                      
         } 
         
     }
