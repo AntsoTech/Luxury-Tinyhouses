@@ -287,7 +287,8 @@ html {
       .footer__socialNetwork {
         justify-content: space-between;
         padding: 40px;
-        gap: 25px; } }
+        gap: 25px;
+        align-items: center; } }
 
 .footer {
   display: flex;
@@ -325,7 +326,8 @@ html {
       .footer__socialNetwork {
         justify-content: space-between;
         padding: 40px;
-        gap: 25px; } }
+        gap: 25px;
+        align-items: center; } }
 
 .nav1 {
   display: flex;
