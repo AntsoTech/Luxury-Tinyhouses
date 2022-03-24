@@ -25,10 +25,33 @@ h1 {
       background-size: 45vw; } }
 
 h3 {
+  font-size: 1.8rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: white;
+  margin: 0; }
+
+h4 {
   font-size: 2rem;
   font-family: "Nunito-Regular";
   text-align: center;
-  color: white; }
+  color: black; }
+
+h5 {
+  font-size: 1.5rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: black;
+  margin-top: 2vh;
+  margin-bottom: 0; }
+
+h6 {
+  font-size: 1.4rem;
+  font-family: "Nunito-Light";
+  text-align: center;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 :root {
   font-size: 16px; }
@@ -45,59 +68,91 @@ html {
   scroll-behavior: smooth; }
 
 .concept {
-  height: 100vh;
   background-color: #fff;
   padding-top: 10vh;
   font-family: "Nunito-Regular"; }
   .concept__quote {
     font-family: "Nunito-Regular";
     font-size: 1.6rem;
-    text-align: center; }
+    text-align: center;
+    font-style: oblique; }
     .concept__quote__author {
-      font-style: oblique;
-      font-size: 1.3rem; }
-  .concept__ourPhilosophy__vector2 {
-    position: absolute;
-    top: 155vh; }
-  .concept__ourPhilosophy__vector1 {
-    position: absolute;
-    right: 0;
-    top: 135vh; }
-  .concept__ourPhilosophy__vector3 {
-    position: absolute;
-    right: 0;
-    top: 165vh; }
+      font-style: normal; }
+    @media all and (max-width: 736px) {
+      .concept__quote {
+        font-size: 1.2rem; } }
   .concept__ourPhilosophy__philosophy {
     display: grid;
     margin: 0 20px;
     text-align: center;
-    font-family: "Nunito-Regular";
-    font-size: 30px;
+    font-size: 1.5rem;
     grid-template-columns: 35% 15% 15% 35%;
     grid-template-rows: 15vw 15vw; }
-    .concept__ourPhilosophy__philosophy__realisation {
-      align-self: center;
-      grid-row: 1/3; }
-      .concept__ourPhilosophy__philosophy__realisation__span {
-        font-weight: 400; }
+    @media all and (max-width: 736px) {
+      .concept__ourPhilosophy__philosophy {
+        font-size: 1.8rem;
+        display: grid;
+        margin: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around; } }
     .concept__ourPhilosophy__philosophy__respect {
-      align-self: center; }
+      grid-row: 1/3;
+      background-image: url("../assets/vector2.png");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-top: 35%; }
+      @media all and (max-width: 736px) {
+        .concept__ourPhilosophy__philosophy__respect {
+          grid-row: 2/3;
+          background-size: 70%;
+          padding-top: 15%; } }
+    .concept__ourPhilosophy__philosophy__realisation {
+      vertical-align: middle;
+      background-image: url("../assets/vector1.png");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center right;
+      padding-top: 15%; }
+      @media all and (max-width: 736px) {
+        .concept__ourPhilosophy__philosophy__realisation {
+          padding-top: 10%;
+          background-size: 60%; } }
     .concept__ourPhilosophy__philosophy__wood {
-      align-self: center; }
-    .concept__ourPhilosophy__philosophy__img--leaf {
-      align-self: center;
-      height: 10vh;
-      width: 10vh;
-      grid-column: 2/3;
-      grid-row: 1/3; }
-    .concept__ourPhilosophy__philosophy__img--customize {
-      align-self: center;
-      height: 10vh;
-      width: 10vh; }
-    .concept__ourPhilosophy__philosophy__img--local {
-      align-self: center;
-      height: 10vh;
-      width: 10vh; }
+      background-image: url("../assets/vector3.png");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center right;
+      padding-top: 15%; }
+      @media all and (max-width: 736px) {
+        .concept__ourPhilosophy__philosophy__wood {
+          padding-top: 10%;
+          justify-content: left;
+          background-size: 60%; } }
+    .concept__ourPhilosophy__philosophy__img {
+      height: 8vh;
+      width: 8vh; }
+      @media all and (max-width: 736px) {
+        .concept__ourPhilosophy__philosophy__img {
+          height: 5vh;
+          width: 5vh;
+          padding: 5%; } }
+      .concept__ourPhilosophy__philosophy__img--left {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        align-self: center;
+        padding-left: 4vw; }
+        @media all and (max-width: 736px) {
+          .concept__ourPhilosophy__philosophy__img--left {
+            grid-row: 2/3; } }
+      .concept__ourPhilosophy__philosophy__img--right {
+        justify-self: right;
+        padding-right: 4vw;
+        padding-top: 4vh; }
+        @media all and (max-width: 736px) {
+          .concept__ourPhilosophy__philosophy__img--right {
+            padding-top: 2vh; } }
 
 .contact {
   background-color: #fff;
@@ -114,6 +169,24 @@ html {
     @media all and (max-width: 736px) {
       .contact__container {
         justify-content: center; } }
+    .contact__container__notif {
+      display: flex;
+      position: absolute;
+      margin-left: -40vw;
+      width: 25vw;
+      height: 9vh;
+      background-color: #1ecd97;
+      text-align: center;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      transition: 0.4s; }
+      @media all and (max-width: 736px) {
+        .contact__container__notif {
+          margin-left: -140vw;
+          height: 5vh; } }
+      .contact__container__notif--visible {
+        margin-left: 0; }
     .contact__container__img {
       background-image: url("../assets/contact-img.svg");
       background-repeat: no-repeat;
@@ -179,8 +252,9 @@ html {
             height: 7vh; } }
 
 .footer {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  bottom: 0;
+  width: 100vw;
   background-color: #c4c4C4;
   color: #fff;
   font-family: "Nunito-Bold"; }
@@ -188,22 +262,38 @@ html {
     display: grid;
     grid-template-columns: 10% 20% 10% 20% 10% 25%;
     align-items: center;
-    width: 70%;
+    width: 50%;
     border-right: #fff 0.2rem solid; }
+    @media all and (max-width: 736px) {
+      .footer__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%; } }
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
+    .footer__info__text {
+      text-decoration: none;
+      color: #fff; }
+      @media all and (max-width: 736px) {
+        .footer__info__text {
+          display: none; } }
   .footer__socialNetwork {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    width: 40%; }
-    .footer__socialNetwork__image {
-      padding: 0 40px 0 40px; }
+    width: 50%; }
+    @media all and (max-width: 736px) {
+      .footer__socialNetwork {
+        justify-content: space-between;
+        padding: 40px;
+        gap: 25px;
+        align-items: center; } }
 
 .footer {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  bottom: 0;
+  width: 100vw;
   background-color: #c4c4C4;
   color: #fff;
   font-family: "Nunito-Bold"; }
@@ -211,41 +301,76 @@ html {
     display: grid;
     grid-template-columns: 10% 20% 10% 20% 10% 25%;
     align-items: center;
-    width: 70%;
+    width: 50%;
     border-right: #fff 0.2rem solid; }
+    @media all and (max-width: 736px) {
+      .footer__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%; } }
     .footer__info__logo {
       justify-self: right;
       justify-items: right; }
+    .footer__info__text {
+      text-decoration: none;
+      color: #fff; }
+      @media all and (max-width: 736px) {
+        .footer__info__text {
+          display: none; } }
   .footer__socialNetwork {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    width: 40%; }
-    .footer__socialNetwork__image {
-      padding: 0 40px 0 40px; }
+    width: 50%; }
+    @media all and (max-width: 736px) {
+      .footer__socialNetwork {
+        justify-content: space-between;
+        padding: 40px;
+        gap: 25px;
+        align-items: center; } }
 
 .nav1 {
   display: flex;
   align-items: center; }
   .nav1__container {
-    display: none; }
+    display: none;
+    position: fixed;
+    right: 5vw; }
     @media all and (max-width: 736px) {
       .nav1__container {
         display: inline-block;
         cursor: pointer;
         position: fixed right;
         margin-left: 26vw;
-        margin-bottom: 10vh; }
-        .nav1__container__bar1, .nav1__container__bar2, .nav1__container__bar3 {
+        margin-bottom: 10vh;
+        z-index: 10; }
+        .nav1__container__bar {
           width: 35px;
           height: 5px;
           background-color: #333;
           margin: 6px 0;
-          transition: 0.4s; } }
+          transition: 0.4s; }
+          .nav1__container__bar--white {
+            background-color: #fff; } }
   .nav1__navList {
     display: flex;
     justify-content: center;
     margin-left: 20rem; }
+    @media all and (max-width: 736px) {
+      .nav1__navList {
+        display: none;
+        margin: 0;
+        flex-direction: column;
+        background-color: rgba(51, 51, 51, 0.7);
+        height: 200vh;
+        width: 50vw;
+        padding: 0;
+        position: fixed;
+        right: 0;
+        padding-top: 20vh;
+        margin-top: 10vh; } }
+    .nav1__navList--visible {
+      display: flex; }
     .nav1__navList__li {
       list-style: none;
       color: #fff;
@@ -260,24 +385,27 @@ html {
         text-align: center; }
         .nav1__navList__li__link:hover {
           text-decoration: underline; }
-      @media all and (max-width: 736px) {
-        .nav1__navList__li {
-          display: none; } }
-
-.changeBurger .nav1__container__bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px); }
-
-.changeBurger .nav1__container__bar2 {
-  opacity: 0; }
-
-.changeBurger .nav1__container__bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
+        @media all and (max-width: 736px) {
+          .nav1__navList__li__link {
+            display: flex;
+            margin: 0;
+            font-size: 2rem;
+            padding-top: 5vh; } }
+  .nav1 .changeBurger .nav1__container__bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .nav1 .changeBurger .nav1__container__bar2 {
+    opacity: 0; }
+  .nav1 .changeBurger .nav1__container__bar3 {
+    transform: rotate(45deg) translate(-8px, -8px); }
 
 #history {
   background-color: #fff;
-  height: 100vh; }
+  height: 100vh;
+  padding-bottom: 25%; }
+  @media all and (max-width: 736px) {
+    #history {
+      padding-bottom: 50%;
+      padding-top: 40%; } }
 
 .histoire {
   padding-top: 3vh; }
@@ -285,15 +413,18 @@ html {
     font-size: 1.5rem;
     font-family: "Nunito-Light";
     margin-left: 3vw;
-    margin-right: 3vw; }
+    margin-right: 3vw;
+    margin-bottom: 5%; }
   .histoire__team {
     display: flex;
-    justify-content: space-around; }
+    justify-content: flex-start;
+    margin-top: 5%; }
     .histoire__team__picture {
       background-image: url("../assets/team exemple.jpeg");
       background-size: cover;
       width: 45vw;
       height: 50vh;
+      margin-right: 10%;
       background-repeat: no-repeat; }
     .histoire__team__section {
       display: grid;
@@ -301,14 +432,46 @@ html {
       grid-template-rows: 1fr 2fr 2fr;
       grid-area: 1 / 4 / 3 / 2;
       height: 20vh; }
+      @media all and (max-width: 736px) {
+        .histoire__team__section {
+          display: flex;
+          flex-direction: column; } }
       .histoire__team__section__title {
         grid-area: 1 / 3 / 2 / 1;
-        text-align: left;
+        text-align: center;
         font-size: 1.6rem;
         font-family: "Nunito-Regular", sans-serif; }
       .histoire__team__section__card {
         font-size: 1.3rem;
         font-family: "Nunito-Light", sans-serif; }
+  .histoire__nosValeurs {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    .histoire__nosValeurs__1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 3vw;
+      margin-left: 3vw; }
+      @media all and (max-width: 736px) {
+        .histoire__nosValeurs__1 {
+          width: 50%; } }
+    .histoire__nosValeurs__picture {
+      background-image: url("../assets/nosvaleurs.jpeg");
+      background-size: cover;
+      width: 45vw;
+      height: 40vh;
+      background-repeat: no-repeat; }
+    .histoire__nosValeurs__section {
+      text-align: center;
+      width: 100%; }
+      .histoire__nosValeurs__section__text {
+        font-size: 1.5rem;
+        font-family: "Nunito-Light";
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: 100%; }
 
 .homePage {
   min-height: 100vh; }
@@ -401,9 +564,9 @@ html {
   display: none;
   justify-content: space-between;
   margin-bottom: 0;
-  box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 64x 1px rgba(0, 0, 0, 0.75);
   width: 100vw; }
   .nav2__logo {
     background-image: url("../assets/logo_final_black.svg");
@@ -448,7 +611,7 @@ html {
   background-color: #fff;
   height: 100vh;
   padding-top: 3vh;
-  padding-bottom: 24%; }
+  padding-bottom: 33%; }
   .projects__section {
     display: flex;
     flex-wrap: wrap;
@@ -463,30 +626,81 @@ html {
       height: 55vh;
       background-image: url("../assets/tinyHouseProject1.jpg");
       background-position: center;
-      background-size: 700px;
+      background-size: 950px;
       align-items: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column; }
+      flex-direction: column;
+      background-repeat: no-repeat; }
+      @media all and (max-width: 736px) {
+        .projects__section__card1 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card1__text--hidden {
+        display: none; }
+      .projects__section__card1__text--visible {
+        display: flex;
+        padding: 5% 5% 5% 5%;
+        width: 70%;
+        background-color: white;
+        opacity: 90%;
+        font-family: "Nunito-Light";
+        font-size: 1.1rem;
+        transition: opacity 2s; }
     .projects__section__card2 {
       width: 49%;
       height: 55vh;
       background-image: url("../assets/tinyHouseProject2.jpeg");
-      background-size: 700px;
+      background-size: 950px;
       background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column; }
+      flex-direction: column;
+      background-repeat: no-repeat; }
+      @media all and (max-width: 736px) {
+        .projects__section__card2 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card2__text--hidden {
+        display: none; }
+      .projects__section__card2__text--visible {
+        display: flex;
+        padding: 5% 5% 5% 5%;
+        width: 70%;
+        background-color: white;
+        opacity: 90%;
+        font-family: "Nunito-Light";
+        font-size: 1.1rem;
+        transition: opacity 2s; }
     .projects__section__card3 {
       margin-top: 1%;
       width: 49%;
       height: 55vh;
       background-image: url("../assets/tinyHouseProject4.jpeg");
-      background-size: 700px;
+      background-size: 950px;
       background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column; }
+      flex-direction: column;
+      background-repeat: no-repeat; }
+      @media all and (max-width: 736px) {
+        .projects__section__card3 {
+          width: 95%;
+          height: 35vh;
+          margin-top: 1%; } }
+      .projects__section__card3__text--hidden {
+        display: none; }
+      .projects__section__card3__text--visible {
+        display: flex;
+        padding: 5% 5% 5% 5%;
+        width: 70%;
+        background-color: white;
+        opacity: 90%;
+        font-family: "Nunito-Light";
+        font-size: 1.1rem;
+        transition: opacity 2s; }

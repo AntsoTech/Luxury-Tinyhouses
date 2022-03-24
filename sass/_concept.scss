@@ -1,85 +1,114 @@
 
 .concept{
-    height: 100vh;
     background-color: $secondColor;
     padding-top: 10vh;
     font-family: "Nunito-Regular";
-
     &__quote {
         font-family: "Nunito-Regular";
         font-size: 1.6rem;
         text-align: center;
+        font-style: oblique;
+
         &__author{
-            font-style: oblique;
-            font-size: 1.3rem;
+            font-style: normal;
+        }
+        @media all and (max-width: 736px){
+            font-size: 1.2rem;
         }
     }
 
     &__ourPhilosophy{
-        &__vector2{
-            position: absolute;
-            top : 155vh;
-        }
-    
-        &__vector1{
-            position: absolute;
-            right: 0;
-            top: 135vh;
-            }
-    
-        &__vector3{
-            position: absolute;
-            right: 0;
-            top : 165vh;
-        }
 
         &__philosophy{
             display: grid;
             margin: 0 20px;
             text-align: center;
-            font-family: "Nunito-Regular";
-            font-size: 30px;
+            font-size: 1.5rem;
             grid-template-columns: 35% 15% 15% 35%;
             grid-template-rows: 15vw 15vw;
 
-            &__realisation{
-                align-self: center;
+            @media all and (max-width: 736px){
+                font-size: 1.8rem;
+                display: grid;
+                margin: 0;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-around;
+            }
+
+            &__respect{
                 grid-row: 1/3;
-
-                &__span{
-                    font-weight:400;
+                background-image: url("../assets/vector2.png");
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center left;
+                padding-top: 35%;
+            
+                @media all and (max-width: 736px){
+                    grid-row: 2/3;
+                    background-size: 70%;
+                    padding-top: 15%;
                 }
+            }
 
-            }
-    
-            &__respect {
-                align-self: center;
-            }
-    
-            &__wood{   
-                align-self: center;
+            &__realisation{
+                vertical-align: middle;
+                background-image: url("../assets/vector1.png");
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position:center right;
+                padding-top: 15%;
+
+                @media all and (max-width: 736px){
+                    padding-top: 10%;
+                    background-size: 60%;
+                }
+            }    
+
+            &__wood{
+                background-image: url("../assets/vector3.png");
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position:center right;
+                padding-top: 15%;
+
+                @media all and (max-width: 736px){
+                    padding-top: 10%;
+                    justify-content: left;
+                    background-size: 60%;
+                }
             }
 
             &__img{
+                height: 8vh;
+                width: 8vh;
+                
+                @media all and (max-width: 736px){
+                    height: 5vh;
+                    width: 5vh;
+                    padding: 5%;
+                }
     
-                &--leaf{
-                    align-self: center;
-                    height: 10vh;
-                    width: 10vh;
+
+                &--left{
                     grid-column: 2/3;
                     grid-row: 1/3;
+                    align-self: center;
+                    padding-left:4vw;
+
+                    @media all and (max-width: 736px){
+                        grid-row : 2/3;
+                    }
                 }
 
-                &--customize{
-                    align-self: center;
-                    height: 10vh;
-                    width: 10vh;
-                }
+                &--right {
+                    justify-self: right;
+                    padding-right: 4vw;
+                    padding-top: 4vh;
 
-                &--local{
-                    align-self: center;
-                    height: 10vh;
-                    width: 10vh;
+                    @media all and (max-width: 736px){
+                        padding-top : 2vh;
+                    }
                 }
             }
         }

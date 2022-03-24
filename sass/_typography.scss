@@ -30,8 +30,36 @@ h1 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Nunito-Regular";
   text-align: center;
   color: white;
+  margin: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: rgb(0, 0, 0);
+
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: "Nunito-Regular";
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 2vh;
+  margin-bottom: 0;
+
+}
+
+h6 {
+  font-size: 1.4rem;
+  font-family: "Nunito-Light";
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 0;
 }

@@ -1,31 +1,50 @@
-.footer{
-    display: inline-flex;
-    width: 100%;
-    background-color: $footerColor;
-    color: $secondColor;
-    font-family: "Nunito-Bold";
+.footer {
+  display: flex;
+  bottom: 0;
+  width: 100vw;
+  background-color: $footerColor;
+  color: $secondColor;
+  font-family: "Nunito-Bold";
 
-    &__info{
-        display: grid;
-        grid-template-columns: 10% 20% 10% 20% 10% 25%;
-        align-items: center;
-        width: 70%;
-        border-right: $secondColor 0.2rem solid;
-        
-            &__logo{
-                justify-self: right;
-                justify-items: right;
-            }
+  &__info {
+    display: grid;
+    grid-template-columns: 10% 20% 10% 20% 10% 25%;
+    align-items: center;
+    width: 50%;
+    border-right: $secondColor 0.2rem solid;
+
+    @media all and (max-width: 736px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;
     }
 
-    &__socialNetwork{
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            width: 40%;
-    
-        &__image {
-            padding: 0 40px 0 40px;
-        }
+    &__logo {
+      justify-self: right;
+      justify-items: right;
     }
+
+    &__text {
+      text-decoration: none;
+      color: $secondColor;
+
+      @media all and (max-width: 736px) {
+        display: none;
+      }
+    }
+  }
+
+  &__socialNetwork {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 50%;
+
+    @media all and (max-width: 736px) {
+      justify-content: space-between;
+      padding: 40px;
+      gap: 25px;
+      align-items: center;
+    }
+  }
 }
